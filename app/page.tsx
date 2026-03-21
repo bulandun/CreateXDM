@@ -80,7 +80,7 @@ export default function HomePage() {
             </h1>
 
             <p className="relative mt-8 max-w-xl text-base leading-relaxed text-[#d7d1c6] md:text-lg">
-              Creative XDM helps ambitious brands launch distinctive campaigns, scale high-performing content, and build modern creative capability through integrated strategy, production, and technology.
+              We turn your vision into creative reality.
             </p>
 
             <div className="relative mt-12 flex flex-wrap items-center gap-4">
@@ -158,9 +158,9 @@ export default function HomePage() {
             <div>
               <p className="text-xs uppercase tracking-[0.28em] text-[#b8b2a7]">Featured work</p>
               <h2 className="mt-5 max-w-4xl font-serif text-5xl leading-[0.95] text-[#f6f4ef] md:text-7xl">
-                Campaign reveals,
+                More taste,
                 <br />
-                not portfolio thumbnails.
+                less template.
               </h2>
             </div>
             <p className="hidden max-w-sm text-sm leading-relaxed text-[#d2cbbd] lg:block">
