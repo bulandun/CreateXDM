@@ -71,16 +71,12 @@ export default function HomePage() {
               Creative XDM / Integrated AI-native creative agency
             </p>
 
-            <h1 className="relative mt-8 max-w-4xl font-serif text-[clamp(3.2rem,11vw,9.5rem)] uppercase leading-[0.9] tracking-tight text-[#f6f4ef]">
-              Creativity,
-              <br />
-              with more taste
-              <br />
-              and less template.
+            <h1 className="relative mt-8 max-w-4xl font-serif text-[clamp(3.2rem,11vw,9.5rem)] leading-[0.9] tracking-tight text-[#f6f4ef]">
+              We turn your vision into creative reality.
             </h1>
 
             <p className="relative mt-8 max-w-xl text-base leading-relaxed text-[#d7d1c6] md:text-lg">
-              We turn your vision into creative reality.
+              Strategy, campaigns, and AI-native creative systems delivered by one integrated partner.
             </p>
 
             <div className="relative mt-12 flex flex-wrap items-center gap-4">
