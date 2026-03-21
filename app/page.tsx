@@ -1,178 +1,191 @@
 import { Reveal } from "@/components/reveal";
-import { SectionHeading } from "@/components/section-heading";
-
-const valueStrip = [
-  "AI-native from day one",
-  "Human creative direction first",
-  "Faster production, premium output",
-  "Campaigns, content, and custom tools"
-];
 
 const services = [
   {
-    title: "Campaign Films & AI Video",
-    text: "End-to-end campaign films, launch edits, and social cutdowns built with AI-native pipelines and rigorous human creative direction."
+    title: "Campaign Direction + Film",
+    text: "Cinematic launch films and cutdown ecosystems engineered for channel spread without losing narrative tension.",
+    index: "01"
   },
   {
-    title: "Visual Worlds & Launch Assets",
-    text: "Distinctive stills, key visuals, and brand-world systems that carry a launch across paid, social, web, and retail touchpoints."
+    title: "Visual Worlds",
+    text: "Brand image systems that behave like an evolving campaign universe, not a static style guide.",
+    index: "02"
   },
   {
-    title: "Social-First Content Systems",
-    text: "Repeatable content systems that let teams ship high-quality, culturally tuned creative at the pace modern channels demand."
+    title: "AI Production Systems",
+    text: "Custom creative pipelines, from prompt architecture to finishing workflows, tailored to each team.",
+    index: "03"
   },
   {
-    title: "Creative Prototyping & Interactive Concepts",
-    text: "Rapid concept prototypes and interactive experiences that pressure-test new ideas before full production investment."
-  },
-  {
-    title: "Custom Createch Tools",
-    text: "Bespoke internal tools and workflow layers that improve creative velocity, consistency, and long-term brand capability."
+    title: "Interactive Concepts",
+    text: "Prototype-led campaign experiences that test bold ideas before full rollout.",
+    index: "04"
   }
 ];
 
-const projects = [
+const featuredWork = [
   {
-    title: "Maison Nord — Future Atelier",
-    category: "Fashion Campaign Film",
+    title: "Maison Nord / The Velvet Signal",
+    type: "Global fashion launch",
+    stat: "12 markets",
     summary:
-      "AI-assisted campaign film blending practical direction, digital set extension, and editorial-grade finishing for a global drop.",
-    deliverables: "Campaign hero film · 12 social cutdowns · OOH motion loops",
-    metrics: "6-week turnaround | 3 markets"
+      "A campaign world blending practical styling, AI set extension, and editorial finishing into one cinematic release system.",
+    tone: "from-[#8f8a7f] via-[#1e1d1b] to-[#090909]"
   },
   {
-    title: "Aether One Launch System",
-    category: "Product Visual System",
+    title: "AETHER / OBJECT IN MOTION",
+    type: "Consumer tech reveal",
+    stat: "140 deliverables",
     summary:
-      "A complete visual launch language spanning hero stills, short-form motion, and e-commerce assets for a premium consumer device.",
-    deliverables: "Launch key visual suite · PDP motion assets · Paid social toolkit",
-    metrics: "120+ assets | 1 visual system"
+      "A full-funnel visual language spanning hero film, still life campaign frames, and adaptive social edits.",
+    tone: "from-[#d9d4cd] via-[#6d685f] to-[#101010]"
   },
   {
-    title: "Parallel Club Content Engine",
-    category: "Social Content Program",
+    title: "Parallel Club / Night Archive",
+    type: "Culture campaign",
+    stat: "Always-on",
     summary:
-      "A social-first content engine designed to produce weekly narrative drops while preserving a consistent and elevated brand signature.",
-    deliverables: "Monthly content framework · Creator-ready templates · Performance variants",
-    metrics: "4x output cadence | Always-on production"
-  },
-  {
-    title: "Signal Lab Experience",
-    category: "Interactive Creative Concept",
-    summary:
-      "An interactive concept and internal ideation tool enabling teams to explore campaign worlds in real time across narrative and style directions.",
-    deliverables: "Clickable prototype · Style simulation environment · Internal playbook",
-    metrics: "3-day prototype sprint"
+      "An editorial-first content engine built to release weekly narrative drops with high-aesthetic consistency.",
+    tone: "from-[#606878] via-[#272b33] to-[#0a0a0a]"
   }
-];
-
-const differentiators = [
-  "AI-native, but human-led at every critical decision point",
-  "Creative direction over prompt churn and generic generation",
-  "Fast turnaround managed to premium brand standards",
-  "Cross-disciplinary execution across story, design, production, and technology",
-  "Systems and tools that compound creative capability over time",
-  "Built for modern launches, cultural relevance, and experimental briefs"
 ];
 
 const process = [
-  {
-    title: "Strategy",
-    text: "Define audience context, business objective, and the creative opportunity worth pursuing."
-  },
-  {
-    title: "Concept",
-    text: "Develop bold creative territories with clear direction, references, and production logic."
-  },
-  {
-    title: "Creation",
-    text: "Produce with AI-native speed and studio-grade art direction, edit, and finishing oversight."
-  },
-  {
-    title: "Delivery",
-    text: "Ship platform-ready assets, workflows, and systems your team can scale and reuse."
-  }
+  ["Frame", "Find the cultural pressure point, then define the brand position worth dramatizing."],
+  ["Worldbuild", "Translate strategy into image systems, mood grammar, and narrative structures."],
+  ["Produce", "Move through AI-native production with hands-on creative direction and ruthless curation."],
+  ["Launch", "Deliver deployable assets plus repeatable systems the team can scale after launch."]
 ];
 
 export default function HomePage() {
   return (
-    <main className="pb-16">
-      <section className="section-shell pb-12 pt-10 md:pt-16">
+    <main className="relative overflow-x-clip pb-24">
+      <div className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(circle_at_15%_10%,rgba(244,76,43,0.15),transparent_35%),radial-gradient(circle_at_85%_15%,rgba(255,255,255,0.09),transparent_35%),linear-gradient(180deg,#111111_0%,#0a0a0a_45%,#090909_100%)]" />
+
+      <section className="mx-auto grid w-full max-w-[1500px] gap-8 px-6 pb-14 pt-10 md:px-12 lg:grid-cols-[1.1fr_0.9fr] lg:pt-14">
         <Reveal>
-          <header className="luxury-border relative overflow-hidden rounded-3xl p-8 md:p-14">
-            <div className="absolute inset-0 bg-grain [background-size:3px_3px] opacity-20" />
-            <div className="absolute -left-24 top-8 h-64 w-64 rounded-full bg-iris/25 blur-3xl" />
-            <div className="absolute -right-20 bottom-0 h-52 w-52 rounded-full bg-neon/20 blur-3xl" />
+          <div className="relative min-h-[70vh] overflow-hidden rounded-[2rem] border border-white/15 bg-[#111111] p-8 md:p-12">
+            <div className="absolute inset-0 bg-[linear-gradient(120deg,rgba(255,255,255,0.08),transparent_35%),linear-gradient(320deg,rgba(244,76,43,0.14),transparent_45%)]" />
+            <div className="absolute -left-24 top-10 h-52 w-52 rounded-full bg-[#f44c2b]/40 blur-[120px]" />
+            <p className="relative max-w-fit border border-white/30 px-3 py-1 text-[0.62rem] uppercase tracking-[0.35em] text-white/80">
+              Creative XDM / AI-native creative culture studio
+            </p>
 
-            <div className="relative">
-              <span className="eyebrow">Creative XDM — AI-native creative agency</span>
-              <h1 className="max-w-5xl font-serif text-4xl leading-[1.02] text-white md:text-7xl">
-                Premium creative production for brands moving at AI speed.
-              </h1>
-              <p className="mt-6 max-w-3xl text-lg leading-relaxed text-silver md:text-xl">
-                We build cinematic visuals, campaign worlds, and custom creative systems that help ambitious teams move faster without sacrificing quality.
-              </p>
+            <h1 className="relative mt-8 max-w-4xl font-serif text-[clamp(3.2rem,11vw,9.5rem)] uppercase leading-[0.9] tracking-tight text-[#f6f4ef]">
+              We don&apos;t make
+              <br />
+              safe launch
+              <br />
+              content.
+            </h1>
 
-              <div className="mt-10 flex flex-wrap gap-4">
-                <button className="rounded-full bg-cloud px-7 py-3 text-sm font-semibold uppercase tracking-widest text-ink transition hover:-translate-y-0.5 hover:bg-white">
-                  Start a Project
-                </button>
-                <button className="rounded-full border border-white/30 px-7 py-3 text-sm font-semibold uppercase tracking-widest text-cloud transition hover:border-white hover:bg-white/10">
-                  View Work
-                </button>
-              </div>
+            <p className="relative mt-8 max-w-xl text-base leading-relaxed text-[#d7d1c6] md:text-lg">
+              Creative XDM builds cinematic brand campaigns, visual worlds, and creative technology systems for teams that want cultural impact—not template output.
+            </p>
+
+            <div className="relative mt-12 flex flex-wrap items-center gap-4">
+              <button className="rounded-full bg-[#f6f4ef] px-8 py-3 text-xs font-semibold uppercase tracking-[0.2em] text-black transition hover:-translate-y-0.5">
+                Start a Project
+              </button>
+              <button className="rounded-full border border-white/45 px-8 py-3 text-xs font-semibold uppercase tracking-[0.2em] text-white transition hover:bg-white/10">
+                View featured work
+              </button>
             </div>
-          </header>
+          </div>
         </Reveal>
-      </section>
 
-      <section className="section-shell py-6">
-        <Reveal>
-          <div className="grid gap-3 rounded-2xl border border-white/15 bg-white/[0.02] p-3 md:grid-cols-2 lg:grid-cols-4 lg:p-4">
-            {valueStrip.map((item) => (
-              <div key={item} className="rounded-xl border border-white/10 bg-white/[0.02] px-4 py-4 text-sm text-cloud/95">
-                {item}
+        <Reveal delay={0.1}>
+          <div className="grid h-full gap-6">
+            <article className="relative overflow-hidden rounded-[2rem] border border-white/15 bg-[#191816] p-8">
+              <p className="text-xs uppercase tracking-[0.28em] text-[#d2cbbd]">Current mode</p>
+              <p className="mt-4 text-3xl font-medium leading-tight text-[#f6f4ef]">
+                Campaign-level art direction, delivered at production speed.
+              </p>
+              <div className="mt-8 grid grid-cols-2 gap-3 text-sm text-[#d2cbbd]">
+                <div className="border border-white/20 p-3">Video + motion</div>
+                <div className="border border-white/20 p-3">Visual systems</div>
+                <div className="border border-white/20 p-3">Creative tech</div>
+                <div className="border border-white/20 p-3">Campaign ops</div>
               </div>
-            ))}
+            </article>
+
+            <article className="relative isolate min-h-64 overflow-hidden rounded-[2rem] border border-white/15 bg-black p-8">
+              <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=1600&q=80')] bg-cover bg-center opacity-45" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black via-black/70 to-black/40" />
+              <div className="relative">
+                <p className="text-xs uppercase tracking-[0.24em] text-white/70">Signal note</p>
+                <p className="mt-3 max-w-xs text-xl leading-snug text-white">
+                  Human creative judgment stays in the loop at every irreversible decision point.
+                </p>
+              </div>
+            </article>
           </div>
         </Reveal>
       </section>
 
-      <section className="section-shell">
-        <SectionHeading
-          eyebrow="Services"
-          title="What clients actually buy when speed and quality both matter."
-          description="A focused offer built for modern brand teams that need premium output, faster production cycles, and creative systems that scale."
-        />
-        <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-5">
-          {services.map((service, idx) => (
-            <Reveal key={service.title} delay={idx * 0.05}>
-              <article className="luxury-border h-full rounded-2xl p-6 transition duration-500 hover:-translate-y-1 hover:border-neon/50 hover:shadow-glow">
-                <h3 className="text-lg font-semibold text-white">{service.title}</h3>
-                <p className="mt-3 text-sm leading-relaxed text-silver">{service.text}</p>
-              </article>
-            </Reveal>
-          ))}
-        </div>
+      <section className="mx-auto w-full max-w-[1500px] px-6 md:px-12">
+        <Reveal>
+          <div className="grid gap-8 border-y border-white/15 py-16 lg:grid-cols-[0.9fr_1.1fr]">
+            <div>
+              <p className="text-xs uppercase tracking-[0.28em] text-[#b8b2a7]">Services</p>
+              <h2 className="mt-6 font-serif text-5xl leading-[0.95] text-[#f6f4ef] md:text-7xl">
+                Built to bend the rules,
+                <br />
+                not follow decks.
+              </h2>
+            </div>
+
+            <div className="space-y-4">
+              {services.map((service, idx) => (
+                <Reveal key={service.title} delay={idx * 0.06}>
+                  <article className="group grid items-start gap-5 border border-white/15 bg-white/[0.03] p-5 transition hover:-translate-y-1 hover:bg-white/[0.05] md:grid-cols-[90px_1fr]">
+                    <p className="text-sm uppercase tracking-[0.18em] text-[#b8b2a7]">{service.index}</p>
+                    <div>
+                      <h3 className="text-2xl text-[#f6f4ef] transition group-hover:tracking-wide">{service.title}</h3>
+                      <p className="mt-2 text-sm leading-relaxed text-[#d2cbbd]">{service.text}</p>
+                    </div>
+                  </article>
+                </Reveal>
+              ))}
+            </div>
+          </div>
+        </Reveal>
       </section>
 
-      <section className="section-shell">
-        <SectionHeading
-          eyebrow="Featured Work"
-          title="Art-directed concepts with commercial intent."
-          description="Representative case studies that reflect the level of creative direction, production craft, and execution discipline we bring to every engagement."
-        />
-        <div className="grid gap-5 md:grid-cols-2">
-          {projects.map((project, idx) => (
-            <Reveal key={project.title} delay={idx * 0.05}>
-              <article className="group overflow-hidden rounded-3xl border border-white/15 bg-gradient-to-br from-white/[0.08] to-white/[0.01]">
-                <div className="h-56 bg-gradient-to-br from-iris/30 via-transparent to-neon/30 transition duration-500 group-hover:scale-[1.02]" />
-                <div className="space-y-3 p-7">
-                  <p className="text-xs uppercase tracking-[0.18em] text-silver">{project.category}</p>
-                  <h3 className="text-xl font-semibold text-white">{project.title}</h3>
-                  <p className="text-sm leading-relaxed text-silver">{project.summary}</p>
-                  <p className="text-xs text-cloud/90">{project.deliverables}</p>
-                  <p className="text-xs uppercase tracking-[0.15em] text-neon/90">{project.metrics}</p>
+      <section className="mx-auto w-full max-w-[1600px] px-6 py-20 md:px-12">
+        <Reveal>
+          <div className="mb-10 flex items-end justify-between gap-6">
+            <div>
+              <p className="text-xs uppercase tracking-[0.28em] text-[#b8b2a7]">Featured work</p>
+              <h2 className="mt-5 max-w-4xl font-serif text-5xl leading-[0.95] text-[#f6f4ef] md:text-7xl">
+                Campaign reveals,
+                <br />
+                not portfolio thumbnails.
+              </h2>
+            </div>
+            <p className="hidden max-w-sm text-sm leading-relaxed text-[#d2cbbd] lg:block">
+              Each project is treated as a visual event: deliberate pacing, cinematic hierarchy, and system-level deliverables.
+            </p>
+          </div>
+        </Reveal>
+
+        <div className="space-y-8">
+          {featuredWork.map((project, idx) => (
+            <Reveal key={project.title} delay={idx * 0.08}>
+              <article className="group grid overflow-hidden rounded-[2rem] border border-white/15 bg-black lg:grid-cols-[1.1fr_0.9fr]">
+                <div className={`min-h-[22rem] bg-gradient-to-br ${project.tone} p-8 md:min-h-[30rem] md:p-12`}>
+                  <p className="text-xs uppercase tracking-[0.26em] text-white/70">{project.type}</p>
+                  <h3 className="mt-4 max-w-xl font-serif text-4xl uppercase leading-[0.9] text-[#f7f5ef] md:text-6xl">
+                    {project.title}
+                  </h3>
+                </div>
+
+                <div className="flex flex-col justify-between p-8 md:p-12">
+                  <p className="text-sm uppercase tracking-[0.2em] text-[#b8b2a7]">{project.stat}</p>
+                  <p className="mt-8 max-w-md text-base leading-relaxed text-[#d2cbbd]">{project.summary}</p>
+                  <button className="mt-10 w-fit border border-white/30 px-5 py-2 text-xs uppercase tracking-[0.2em] text-white transition group-hover:bg-white group-hover:text-black">
+                    View case study
+                  </button>
                 </div>
               </article>
             </Reveal>
@@ -180,128 +193,53 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="section-shell">
-        <div className="grid gap-10 lg:grid-cols-[1.1fr_1fr]">
-          <Reveal>
-            <div>
-              <SectionHeading
-                eyebrow="Why Creative XDM"
-                title="AI-native capability with creative standards premium brands expect."
-                description="We are built for teams who need speed, distinctiveness, and operational leverage—without compromising on taste, strategy, or brand integrity."
-              />
-              <div className="grid gap-3 md:grid-cols-2">
-                {differentiators.map((item, idx) => (
-                  <Reveal key={item} delay={idx * 0.04}>
-                    <div className="rounded-xl border border-white/15 bg-white/[0.02] p-4 text-sm leading-relaxed text-silver">
-                      {item}
-                    </div>
-                  </Reveal>
-                ))}
-              </div>
-            </div>
-          </Reveal>
-
-          <Reveal delay={0.12}>
-            <aside className="luxury-border rounded-3xl p-8">
-              <span className="eyebrow">Responsible AI</span>
-              <h3 className="font-serif text-3xl text-white">Human oversight is built into the workflow.</h3>
-              <p className="mt-5 text-sm leading-relaxed text-silver">
-                We use AI to increase speed and range, never to replace creative judgment. Every output is directed, curated, and quality-controlled by experienced creatives for brand fit, originality, and execution quality.
-              </p>
-              <ul className="mt-6 space-y-3 text-sm text-cloud/90">
-                <li>• Creative director sign-off at concept and final output stages</li>
-                <li>• Brand-specific style controls and review checkpoints</li>
-                <li>• Editorial quality assurance before delivery</li>
-              </ul>
-            </aside>
-          </Reveal>
-        </div>
-      </section>
-
-      <section className="section-shell">
-        <SectionHeading
-          eyebrow="Process"
-          title="A modern workflow: human-led, AI-accelerated."
-          description="Simple by design, robust in execution—from strategic alignment to production-ready delivery."
-        />
-        <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
-          {process.map((step, idx) => (
-            <Reveal key={step.title} delay={idx * 0.04}>
-              <article className="luxury-border h-full rounded-2xl p-6">
-                <span className="text-xs uppercase tracking-[0.2em] text-neon/90">0{idx + 1}</span>
-                <h3 className="mt-3 text-xl font-semibold text-white">{step.title}</h3>
-                <p className="mt-3 text-sm leading-relaxed text-silver">{step.text}</p>
-              </article>
-            </Reveal>
-          ))}
-        </div>
-      </section>
-
-      <section className="section-shell">
+      <section className="mx-auto grid w-full max-w-[1500px] gap-10 px-6 py-8 md:px-12 lg:grid-cols-[1.1fr_0.9fr]">
         <Reveal>
-          <div className="grid gap-10 lg:grid-cols-[1.1fr_1fr]">
-            <div>
-              <SectionHeading
-                eyebrow="About"
-                title="A new kind of creative partner for modern brands."
-                description="Creative XDM operates at the intersection of storytelling, visual culture, design, and emerging technology. We partner with premium brands, startups, and cultural clients to create work that is strategically sharp, visually distinct, and commercially relevant."
-              />
-              <p className="max-w-2xl text-base leading-relaxed text-silver">
-                Our model combines senior creative direction with AI-native production workflows so teams can launch faster, iterate smarter, and build durable creative capability—not just one-off assets.
-              </p>
-            </div>
-            <div className="rounded-3xl border border-white/15 bg-white/[0.02] p-8">
-              <p className="text-xs uppercase tracking-[0.18em] text-silver">Who we work with</p>
-              <ul className="mt-5 space-y-3 text-sm text-cloud/95">
-                <li>Premium consumer and lifestyle brands</li>
-                <li>Founders launching new products or categories</li>
-                <li>Cultural institutions and future-facing initiatives</li>
-                <li>In-house teams needing high-speed creative scale</li>
-              </ul>
+          <div className="border border-white/15 bg-[#121110] p-8 md:p-10">
+            <p className="text-xs uppercase tracking-[0.28em] text-[#b8b2a7]">About</p>
+            <h2 className="mt-6 font-serif text-4xl leading-tight text-[#f6f4ef] md:text-6xl">
+              We operate where cinema, culture, and creative systems collide.
+            </h2>
+            <p className="mt-6 max-w-2xl text-base leading-relaxed text-[#d2cbbd]">
+              Creative XDM is an AI-native creative agency shaping launch campaigns across video, visuals, and interactive concepts. We collaborate with premium brands, future-facing startups, and culture clients that want work with taste, tension, and strategic clarity.
+            </p>
+          </div>
+        </Reveal>
+
+        <Reveal delay={0.1}>
+          <div className="relative overflow-hidden border border-white/15 p-8 md:p-10">
+            <div className="absolute inset-0 bg-[linear-gradient(160deg,rgba(255,255,255,0.06),transparent_40%),radial-gradient(circle_at_90%_10%,rgba(244,76,43,0.16),transparent_38%)]" />
+            <h3 className="relative text-xs uppercase tracking-[0.26em] text-[#b8b2a7]">Process</h3>
+            <div className="relative mt-5 space-y-5">
+              {process.map(([title, text], idx) => (
+                <div key={title} className="border-b border-white/15 pb-4 last:border-none">
+                  <p className="text-xs uppercase tracking-[0.2em] text-[#f6f4ef]">0{idx + 1} / {title}</p>
+                  <p className="mt-2 text-sm leading-relaxed text-[#d2cbbd]">{text}</p>
+                </div>
+              ))}
             </div>
           </div>
         </Reveal>
       </section>
 
-      <section className="section-shell pt-4">
+      <section className="mx-auto w-full max-w-[1500px] px-6 pt-14 md:px-12">
         <Reveal>
-          <div className="luxury-border rounded-3xl p-8 md:p-12">
-            <span className="eyebrow">Start a Project</span>
-            <h2 className="max-w-2xl font-serif text-3xl text-white md:text-5xl">
-              Ready to move faster and raise the creative standard?
+          <div className="relative overflow-hidden rounded-[2rem] border border-white/20 bg-[#151311] p-8 md:p-14">
+            <div className="absolute -right-28 top-8 h-72 w-72 rounded-full bg-[#f44c2b]/35 blur-[120px]" />
+            <p className="relative text-xs uppercase tracking-[0.3em] text-[#d2cbbd]">Contact</p>
+            <h2 className="relative mt-6 max-w-4xl font-serif text-4xl uppercase leading-[0.9] text-[#f6f4ef] md:text-7xl">
+              Bring us the brief nobody else knows how to make.
             </h2>
-            <p className="mt-5 max-w-2xl text-silver">
-              Tell us what you are launching and where you need leverage. We will propose a focused approach built for your timeline, audience, and brand ambition.
-            </p>
 
-            <form className="mt-10 grid gap-4 md:grid-cols-2">
-              <input
-                className="rounded-xl border border-white/20 bg-white/[0.03] p-3 text-sm text-white placeholder:text-silver/70 focus:border-neon/60 focus:outline-none"
-                placeholder="Name"
-              />
-              <input
-                className="rounded-xl border border-white/20 bg-white/[0.03] p-3 text-sm text-white placeholder:text-silver/70 focus:border-neon/60 focus:outline-none"
-                placeholder="Email"
-                type="email"
-              />
-              <input
-                className="rounded-xl border border-white/20 bg-white/[0.03] p-3 text-sm text-white placeholder:text-silver/70 focus:border-neon/60 focus:outline-none md:col-span-2"
-                placeholder="Company"
-              />
-              <textarea
-                className="min-h-36 rounded-xl border border-white/20 bg-white/[0.03] p-3 text-sm text-white placeholder:text-silver/70 focus:border-neon/60 focus:outline-none md:col-span-2"
-                placeholder="Project details"
-              />
-              <button className="rounded-full bg-cloud px-7 py-3 text-sm font-semibold uppercase tracking-widest text-ink transition hover:-translate-y-0.5 hover:bg-white md:col-span-2 md:w-fit">
-                Start a Project
+            <form className="relative mt-10 grid gap-4 md:grid-cols-2">
+              <input className="border border-white/25 bg-black/30 p-3 text-sm text-white placeholder:text-white/55 focus:border-[#f44c2b] focus:outline-none" placeholder="Name" />
+              <input className="border border-white/25 bg-black/30 p-3 text-sm text-white placeholder:text-white/55 focus:border-[#f44c2b] focus:outline-none" placeholder="Email" type="email" />
+              <input className="border border-white/25 bg-black/30 p-3 text-sm text-white placeholder:text-white/55 focus:border-[#f44c2b] focus:outline-none md:col-span-2" placeholder="Brand / company" />
+              <textarea className="min-h-36 border border-white/25 bg-black/30 p-3 text-sm text-white placeholder:text-white/55 focus:border-[#f44c2b] focus:outline-none md:col-span-2" placeholder="What are you launching?" />
+              <button className="w-fit bg-[#f6f4ef] px-7 py-3 text-xs font-semibold uppercase tracking-[0.2em] text-black transition hover:-translate-y-0.5 md:col-span-2">
+                Start conversation
               </button>
             </form>
-
-            <div className="mt-8 space-y-1 text-sm text-silver">
-              <p>Email: hello@creativexdm.com</p>
-              <p>Instagram: @creativexdm</p>
-              <p>LinkedIn: /company/creativexdm</p>
-            </div>
           </div>
         </Reveal>
       </section>

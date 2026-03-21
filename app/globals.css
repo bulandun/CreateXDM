@@ -6,26 +6,17 @@
   color-scheme: dark;
 }
 
+@layer base {
+  body {
+    font-family: "Inter", "Avenir Next", "Helvetica Neue", system-ui, sans-serif;
+    @apply bg-[#090909] text-[#f6f4ef] antialiased;
+  }
+
+  .font-serif {
+    font-family: "Bodoni MT", "Didot", "Times New Roman", serif;
+  }
+}
+
 * {
-  border-color: rgba(255, 255, 255, 0.15);
-}
-
-body {
-  @apply bg-ink text-cloud antialiased;
-  background-image:
-    radial-gradient(circle at 15% 15%, rgba(168, 179, 255, 0.18), transparent 35%),
-    radial-gradient(circle at 85% 5%, rgba(156, 247, 213, 0.14), transparent 30%),
-    linear-gradient(180deg, #08090c 0%, #0b0d11 60%, #090a0d 100%);
-}
-
-.section-shell {
-  @apply mx-auto w-full max-w-7xl px-6 py-20 md:px-10 md:py-28;
-}
-
-.eyebrow {
-  @apply mb-6 inline-flex items-center gap-2 rounded-full border border-white/20 px-4 py-2 text-xs uppercase tracking-[0.18em] text-silver/90;
-}
-
-.luxury-border {
-  @apply border border-white/15 bg-white/[0.03] backdrop-blur;
+  border-color: rgba(255, 255, 255, 0.16);
 }
