@@ -72,11 +72,11 @@ export default function HomePage() {
             </p>
 
             <h1 className="relative mt-8 max-w-4xl font-serif text-[clamp(3.2rem,11vw,9.5rem)] uppercase leading-[0.9] tracking-tight text-[#f6f4ef]">
-              We build
+              Creativity,
               <br />
-              modern brand
+              with more taste
               <br />
-              campaigns.
+              and less template.
             </h1>
 
             <p className="relative mt-8 max-w-xl text-base leading-relaxed text-[#d7d1c6] md:text-lg">
