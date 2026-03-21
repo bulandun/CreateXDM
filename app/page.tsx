@@ -92,19 +92,6 @@ export default function HomePage() {
 
         <Reveal delay={0.1}>
           <div className="grid h-full gap-6">
-            <article className="relative overflow-hidden rounded-[2rem] border border-white/15 bg-[#191816] p-8">
-              <p className="text-xs uppercase tracking-[0.28em] text-[#d2cbbd]">Current mode</p>
-              <p className="mt-4 text-3xl font-medium leading-tight text-[#f6f4ef]">
-                One integrated offer: strategy, campaign creation, and scalable creative systems.
-              </p>
-              <div className="mt-8 grid grid-cols-2 gap-3 text-sm text-[#d2cbbd]">
-                <div className="border border-white/20 p-3">Brand worlds</div>
-                <div className="border border-white/20 p-3">Campaign content</div>
-                <div className="border border-white/20 p-3">AI production</div>
-                <div className="border border-white/20 p-3">Creative direction</div>
-              </div>
-            </article>
-
             <article className="relative isolate min-h-64 overflow-hidden rounded-[2rem] border border-white/15 bg-black p-8">
               <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=1600&q=80')] bg-cover bg-center opacity-45" />
               <div className="absolute inset-0 bg-gradient-to-t from-black via-black/70 to-black/40" />
