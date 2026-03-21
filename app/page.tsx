@@ -2,23 +2,23 @@ import { Reveal } from "@/components/reveal";
 
 const services = [
   {
-    title: "Campaign Direction + Film",
-    text: "Cinematic launch films and cutdown ecosystems engineered for channel spread without losing narrative tension.",
+    title: "Brand Worlds",
+    text: "Ownable campaign worlds that turn strategy into a distinctive visual and narrative system across every touchpoint.",
     index: "01"
   },
   {
-    title: "Visual Worlds",
-    text: "Brand image systems that behave like an evolving campaign universe, not a static style guide.",
+    title: "Campaign Content",
+    text: "Hero ideas translated into launch films, social narratives, stills, and rollout ecosystems built for full-funnel momentum.",
     index: "02"
   },
   {
     title: "AI Production Systems",
-    text: "Custom creative pipelines, from prompt architecture to finishing workflows, tailored to each team.",
+    text: "AI-native production architecture that increases velocity, protects quality, and scales output without losing creative intent.",
     index: "03"
   },
   {
-    title: "Interactive Concepts",
-    text: "Prototype-led campaign experiences that test bold ideas before full rollout.",
+    title: "Creative Technology + Direction",
+    text: "Strategic creative leadership paired with custom tools, prototypes, and workflows that modernize internal capability.",
     index: "04"
   }
 ];
@@ -68,19 +68,19 @@ export default function HomePage() {
             <div className="absolute inset-0 bg-[linear-gradient(120deg,rgba(255,255,255,0.08),transparent_35%),linear-gradient(320deg,rgba(244,76,43,0.14),transparent_45%)]" />
             <div className="absolute -left-24 top-10 h-52 w-52 rounded-full bg-[#f44c2b]/40 blur-[120px]" />
             <p className="relative max-w-fit border border-white/30 px-3 py-1 text-[0.62rem] uppercase tracking-[0.35em] text-white/80">
-              Creative XDM / AI-native creative culture studio
+              Creative XDM / Integrated AI-native creative agency
             </p>
 
             <h1 className="relative mt-8 max-w-4xl font-serif text-[clamp(3.2rem,11vw,9.5rem)] uppercase leading-[0.9] tracking-tight text-[#f6f4ef]">
-              We don&apos;t make
+              We build
               <br />
-              safe launch
+              modern brand
               <br />
-              content.
+              campaigns.
             </h1>
 
             <p className="relative mt-8 max-w-xl text-base leading-relaxed text-[#d7d1c6] md:text-lg">
-              Creative XDM builds cinematic brand campaigns, visual worlds, and creative technology systems for teams that want cultural impact—not template output.
+              Creative XDM helps ambitious brands launch distinctive campaigns, scale high-performing content, and build modern creative capability through integrated strategy, production, and technology.
             </p>
 
             <div className="relative mt-12 flex flex-wrap items-center gap-4">
@@ -99,13 +99,13 @@ export default function HomePage() {
             <article className="relative overflow-hidden rounded-[2rem] border border-white/15 bg-[#191816] p-8">
               <p className="text-xs uppercase tracking-[0.28em] text-[#d2cbbd]">Current mode</p>
               <p className="mt-4 text-3xl font-medium leading-tight text-[#f6f4ef]">
-                Campaign-level art direction, delivered at production speed.
+                One integrated offer: strategy, campaign creation, and scalable creative systems.
               </p>
               <div className="mt-8 grid grid-cols-2 gap-3 text-sm text-[#d2cbbd]">
-                <div className="border border-white/20 p-3">Video + motion</div>
-                <div className="border border-white/20 p-3">Visual systems</div>
-                <div className="border border-white/20 p-3">Creative tech</div>
-                <div className="border border-white/20 p-3">Campaign ops</div>
+                <div className="border border-white/20 p-3">Brand worlds</div>
+                <div className="border border-white/20 p-3">Campaign content</div>
+                <div className="border border-white/20 p-3">AI production</div>
+                <div className="border border-white/20 p-3">Creative direction</div>
               </div>
             </article>
 
@@ -115,7 +115,7 @@ export default function HomePage() {
               <div className="relative">
                 <p className="text-xs uppercase tracking-[0.24em] text-white/70">Signal note</p>
                 <p className="mt-3 max-w-xs text-xl leading-snug text-white">
-                  Human creative judgment stays in the loop at every irreversible decision point.
+                  We design systems where speed scales output, and creative leadership protects brand distinction.
                 </p>
               </div>
             </article>
@@ -129,9 +129,9 @@ export default function HomePage() {
             <div>
               <p className="text-xs uppercase tracking-[0.28em] text-[#b8b2a7]">Services</p>
               <h2 className="mt-6 font-serif text-5xl leading-[0.95] text-[#f6f4ef] md:text-7xl">
-                Built to bend the rules,
+                Integrated capabilities
                 <br />
-                not follow decks.
+                for modern brand growth.
               </h2>
             </div>
 
@@ -164,7 +164,7 @@ export default function HomePage() {
               </h2>
             </div>
             <p className="hidden max-w-sm text-sm leading-relaxed text-[#d2cbbd] lg:block">
-              Each project is treated as a visual event: deliberate pacing, cinematic hierarchy, and system-level deliverables.
+              We combine strategic direction, premium craft, and AI-native systems to deliver work that performs now and compounds over time.
             </p>
           </div>
         </Reveal>
@@ -198,10 +198,10 @@ export default function HomePage() {
           <div className="border border-white/15 bg-[#121110] p-8 md:p-10">
             <p className="text-xs uppercase tracking-[0.28em] text-[#b8b2a7]">About</p>
             <h2 className="mt-6 font-serif text-4xl leading-tight text-[#f6f4ef] md:text-6xl">
-              We operate where cinema, culture, and creative systems collide.
+              We operate as a strategic creative partner, not a production vendor.
             </h2>
             <p className="mt-6 max-w-2xl text-base leading-relaxed text-[#d2cbbd]">
-              Creative XDM is an AI-native creative agency shaping launch campaigns across video, visuals, and interactive concepts. We collaborate with premium brands, future-facing startups, and culture clients that want work with taste, tension, and strategic clarity.
+              Creative XDM is an integrated agency that helps brands define their creative direction, launch standout campaigns, and install AI-native ways of working. We partner with ambitious teams that want measurable outcomes and premium execution.
             </p>
           </div>
         </Reveal>
@@ -228,7 +228,7 @@ export default function HomePage() {
             <div className="absolute -right-28 top-8 h-72 w-72 rounded-full bg-[#f44c2b]/35 blur-[120px]" />
             <p className="relative text-xs uppercase tracking-[0.3em] text-[#d2cbbd]">Contact</p>
             <h2 className="relative mt-6 max-w-4xl font-serif text-4xl uppercase leading-[0.9] text-[#f6f4ef] md:text-7xl">
-              Bring us the brief nobody else knows how to make.
+              Let&apos;s build your next campaign platform.
             </h2>
 
             <form className="relative mt-10 grid gap-4 md:grid-cols-2">
