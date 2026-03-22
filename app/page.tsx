@@ -25,20 +25,20 @@ const services = [
 
 const featuredWork = [
   {
-    title: "Words + references",
-    type: "Multimodal input",
-    stat: "Strategy aligned",
-    summary:
-      "We define the vision through language, references, and creative direction so every concept starts from a clear strategic foundation.",
-    tone: "from-[#8f8a7f] via-[#1e1d1b] to-[#090909]"
-  },
-  {
     title: "Images + video + audio",
     type: "Rapid prototyping",
     stat: "Faster iteration",
     summary:
       "We explore creative directions across visuals, video, and sound to quickly identify the strongest route forward.",
     tone: "from-[#d9d4cd] via-[#6d685f] to-[#101010]"
+  },
+  {
+    title: "Words + references",
+    type: "Multimodal input",
+    stat: "Strategy aligned",
+    summary:
+      "We define the vision through language, references, and creative direction so every concept starts from a clear strategic foundation.",
+    tone: "from-[#8f8a7f] via-[#1e1d1b] to-[#090909]"
   },
   {
     title: "Production-ready output",
