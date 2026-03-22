@@ -153,7 +153,7 @@ export default function HomePage() {
                 <div className="flex flex-col justify-between p-8 md:p-12">
                   <p className="text-sm uppercase tracking-[0.2em] text-[#b8b2a7]">{project.stat}</p>
                   <p className="mt-8 max-w-md text-base leading-relaxed text-[#d2cbbd]">{project.summary}</p>
-                  <button className="mt-10 w-fit border border-white/30 px-5 py-2 text-xs uppercase tracking-[0.2em] text-white transition group-hover:bg-white group-hover:text-black">
+                  <button className="mt-6 w-fit border border-white/30 px-5 py-2 text-xs uppercase tracking-[0.2em] text-white transition group-hover:bg-white group-hover:text-black">
                     View case study
                   </button>
                 </div>
