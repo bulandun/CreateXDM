@@ -3,22 +3,22 @@ import { Reveal } from "@/components/reveal";
 const services = [
   {
     title: "Visuals",
-    text: "High-quality brand visuals, campaign imagery, key art, concept development, and creative assets built to stand out.",
+    text: "Standout brand visuals, campaign imagery, key art, and creative assets that give ideas a clear and compelling form.",
     index: "01"
   },
   {
     title: "Video",
-    text: "AI-native video development for ads, social content, launch films, explainers, and branded storytelling.",
+    text: "Campaign films, social content, launch videos, explainers, and branded storytelling built to engage audiences across platforms.",
     index: "02"
   },
   {
     title: "Creative Systems",
-    text: "Repeatable workflows, content pipelines, and creative tool systems that help brands produce faster with more consistency and control.",
+    text: "Scalable workflows, content pipelines, and creative systems that bring more speed, consistency, and control to modern brand production.",
     index: "03"
   },
   {
-    title: "Concept Development",
-    text: "We shape the creative direction before production begins, helping ideas become stronger, clearer, and more distinctive.",
+    title: "Creative Tech Tools",
+    text: "Bespoke tools built for creative teams, designed to improve workflows, unlock new possibilities, and turn creative capability into a competitive advantage.",
     index: "04"
   }
 ];
