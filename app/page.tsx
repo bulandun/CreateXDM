@@ -140,9 +140,6 @@ export default function HomePage() {
                 Taste Not Template
               </h2>
             </div>
-            <p className="hidden max-w-sm text-sm leading-relaxed text-[#d2cbbd] lg:block">
-              We use a multimodal creative process that brings together words, images, video, audio, references, and creative direction to turn early ideas into production-ready work. Instead of relying on text prompts alone, we build from the same mix of inputs real creative teams already use, helping create stronger concepts, faster iterations, and more aligned outcomes.
-            </p>
           </div>
         </Reveal>
 
