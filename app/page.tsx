@@ -30,7 +30,8 @@ const featuredWork = [
     stat: "Faster iteration",
     summary:
       "We explore creative directions across visuals, video, and sound to quickly identify the strongest route forward.",
-    tone: "from-[#d9d4cd] via-[#6d685f] to-[#101010]"
+    tone: "from-[#d9d4cd] via-[#6d685f] to-[#101010]",
+    mediaSrc: "/images/images-video-audio-eye.svg"
   },
   {
     title: "Words + references",
@@ -147,9 +148,19 @@ export default function HomePage() {
           {featuredWork.map((project, idx) => (
             <Reveal key={project.title} delay={idx * 0.08}>
               <article className="group grid overflow-hidden rounded-[2rem] border border-white/15 bg-black lg:grid-cols-[1.1fr_0.9fr]">
-                <div className={`min-h-[22rem] bg-gradient-to-br ${project.tone} p-8 md:min-h-[30rem] md:p-12`}>
+                <div className={`relative min-h-[22rem] bg-gradient-to-br ${project.tone} p-8 md:min-h-[30rem] md:p-12`}>
+                  {project.mediaSrc ? (
+                    <>
+                      <img
+                        src={project.mediaSrc}
+                        alt="Macro iris close-up"
+                        className="absolute inset-0 h-full w-full object-cover"
+                      />
+                      <div className="absolute inset-0 bg-black/35" />
+                    </>
+                  ) : null}
                   <p className="text-xs uppercase tracking-[0.26em] text-white/70">{project.type}</p>
-                  <h3 className="mt-4 max-w-xl font-serif text-4xl uppercase leading-[0.9] text-[#f7f5ef] md:text-6xl">
+                  <h3 className="relative mt-4 max-w-xl font-serif text-4xl uppercase leading-[0.9] text-[#f7f5ef] md:text-6xl">
                     {project.title}
                   </h3>
                 </div>
