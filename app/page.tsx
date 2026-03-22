@@ -68,9 +68,14 @@ export default function HomePage() {
           <div className="relative min-h-[70vh] overflow-hidden rounded-[2rem] border border-white/15 bg-[#111111] p-8 md:p-12">
             <div className="absolute inset-0 bg-[linear-gradient(120deg,rgba(255,255,255,0.08),transparent_35%),linear-gradient(320deg,rgba(244,76,43,0.14),transparent_45%)]" />
             <div className="absolute -left-24 top-10 h-52 w-52 rounded-full bg-[#f44c2b]/40 blur-[120px]" />
-            <p className="relative max-w-fit border border-white/30 px-3 py-1 text-[0.62rem] uppercase tracking-[0.35em] text-white/80">
-              Creative XDM Redefining the future of the creative studio.
-            </p>
+            <div className="relative inline-flex max-w-fit items-baseline rounded-md border border-white/20 bg-black/30 px-4 py-3">
+              <span className="text-[clamp(2rem,5.5vw,4.6rem)] font-light tracking-tight text-[#f6f4ef]">
+                Create
+              </span>
+              <span className="text-[clamp(2rem,5.5vw,4.6rem)] font-semibold tracking-tight text-[#f6f4ef]">
+                XDM
+              </span>
+            </div>
 
             <h1 className="relative mt-8 max-w-4xl font-serif text-[clamp(3.2rem,11vw,9.5rem)] leading-[0.9] tracking-tight text-[#f6f4ef]">
               We turn your vision into creative reality
