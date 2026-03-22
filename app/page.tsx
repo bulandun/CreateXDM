@@ -34,7 +34,7 @@ const featuredWork = [
     type: "Multimodal input",
     stat: "Build Your Creative Supply Chain",
     summary:
-      "We help guide your team in building a creative supply chain, giving you complete control over your creative production.",
+      "We help guide your team in building a creative supply chain that gives you complete control over your creative AI production, creating clearer workflows, stronger consistency, faster turnaround times, and better visibility across every stage of the process.",
     tone: "from-[#8f8a7f] via-[#1e1d1b] to-[#090909]",
     mediaSrc: "/images/words-references-collage.svg",
     mediaAlt: "Collage of reference moments connected by arrows"
