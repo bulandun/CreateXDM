@@ -68,7 +68,7 @@ export default function HomePage() {
           <div className="relative min-h-[70vh] overflow-hidden rounded-[2rem] border border-white/15 bg-[#111111] p-8 md:p-12">
             <div className="absolute inset-0 bg-[linear-gradient(120deg,rgba(255,255,255,0.08),transparent_35%),linear-gradient(320deg,rgba(244,76,43,0.14),transparent_45%)]" />
             <div className="absolute -left-24 top-10 h-52 w-52 rounded-full bg-[#f44c2b]/40 blur-[120px]" />
-            <div className="absolute right-[10%] top-[18%] h-56 w-56 rounded-full bg-[radial-gradient(circle_at_30%_30%,rgba(242,225,210,0.78),rgba(183,108,66,0.44)_42%,rgba(78,103,123,0.28)_80%,rgba(12,18,24,0)_100%)] opacity-55 blur-[14px]" />
+            <div className="absolute right-[9%] top-[14%] h-72 w-72 rounded-full bg-[radial-gradient(circle_at_30%_30%,rgba(247,235,221,0.58),rgba(255,116,46,0.34)_40%,rgba(120,74,52,0.14)_68%,rgba(12,18,24,0)_100%)] opacity-45 blur-[20px]" />
             <div className="relative inline-flex max-w-fit flex-wrap items-center gap-4 rounded-md bg-black/30 px-4 py-3">
               <div className="inline-flex items-baseline">
                 <span className="text-[clamp(1.5rem,4vw,3.2rem)] font-light tracking-tight text-[#f6f4ef]">
