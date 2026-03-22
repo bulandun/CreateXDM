@@ -31,7 +31,8 @@ const featuredWork = [
     summary:
       "We explore creative directions across visuals, video, and sound to quickly identify the strongest route forward.",
     tone: "from-[#d9d4cd] via-[#6d685f] to-[#101010]",
-    mediaSrc: "/images/images-video-audio-eye.svg"
+    mediaSrc: "/images/images-video-audio-eye.svg",
+    mediaAlt: "Macro iris close-up"
   },
   {
     title: "Words + references",
@@ -39,7 +40,9 @@ const featuredWork = [
     stat: "Strategy aligned",
     summary:
       "We define the vision through language, references, and creative direction so every concept starts from a clear strategic foundation.",
-    tone: "from-[#8f8a7f] via-[#1e1d1b] to-[#090909]"
+    tone: "from-[#8f8a7f] via-[#1e1d1b] to-[#090909]",
+    mediaSrc: "/images/words-references-collage.svg",
+    mediaAlt: "Collage of reference moments connected by arrows"
   },
   {
     title: "Production-ready output",
@@ -47,7 +50,8 @@ const featuredWork = [
     stat: "Real-world delivery",
     summary:
       "We refine and produce assets that match the brief and can scale through repeatable creative systems where needed.",
-    tone: "from-[#606878] via-[#272b33] to-[#0a0a0a]"
+    tone: "from-[#606878] via-[#272b33] to-[#0a0a0a]",
+    mediaAlt: "Production-ready output abstract gradient"
   }
 ];
 
@@ -153,7 +157,7 @@ export default function HomePage() {
                     <>
                       <img
                         src={project.mediaSrc}
-                        alt="Macro iris close-up"
+                        alt={project.mediaAlt ?? project.title}
                         className="absolute inset-0 h-full w-full object-cover"
                       />
                       <div className="absolute inset-0 bg-black/35" />
