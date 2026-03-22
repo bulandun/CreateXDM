@@ -2,59 +2,60 @@ import { Reveal } from "@/components/reveal";
 
 const services = [
   {
-    title: "Brand Worlds",
-    text: "Ownable campaign worlds that turn strategy into a distinctive visual and narrative system across every touchpoint.",
+    title: "Visuals",
+    text: "High-quality brand visuals, campaign imagery, key art, concept development, and creative assets built to stand out.",
     index: "01"
   },
   {
-    title: "Campaign Content",
-    text: "Hero ideas translated into launch films, social narratives, stills, and rollout ecosystems built for full-funnel momentum.",
+    title: "Video",
+    text: "AI-native video development for ads, social content, launch films, explainers, and branded storytelling.",
     index: "02"
   },
   {
-    title: "AI Production Systems",
-    text: "AI-native production architecture that increases velocity, protects quality, and scales output without losing creative intent.",
+    title: "Creative Systems",
+    text: "Repeatable workflows, content pipelines, and creative tool systems that help brands produce faster with more consistency and control.",
     index: "03"
   },
   {
-    title: "Creative Technology + Direction",
-    text: "Strategic creative leadership paired with custom tools, prototypes, and workflows that modernize internal capability.",
+    title: "Concept Development",
+    text: "We shape the creative direction before production begins, helping ideas become stronger, clearer, and more distinctive.",
     index: "04"
   }
 ];
 
 const featuredWork = [
   {
-    title: "Maison Nord / The Velvet Signal",
-    type: "Global fashion launch",
-    stat: "12 markets",
+    title: "Words + references",
+    type: "Multimodal input",
+    stat: "Strategy aligned",
     summary:
-      "A campaign world blending practical styling, AI set extension, and editorial finishing into one cinematic release system.",
+      "We define the vision through language, references, and creative direction so every concept starts from a clear strategic foundation.",
     tone: "from-[#8f8a7f] via-[#1e1d1b] to-[#090909]"
   },
   {
-    title: "AETHER / OBJECT IN MOTION",
-    type: "Consumer tech reveal",
-    stat: "140 deliverables",
+    title: "Images + video + audio",
+    type: "Rapid prototyping",
+    stat: "Faster iteration",
     summary:
-      "A full-funnel visual language spanning hero film, still life campaign frames, and adaptive social edits.",
+      "We explore creative directions across visuals, video, and sound to quickly identify the strongest route forward.",
     tone: "from-[#d9d4cd] via-[#6d685f] to-[#101010]"
   },
   {
-    title: "Parallel Club / Night Archive",
-    type: "Culture campaign",
-    stat: "Always-on",
+    title: "Production-ready output",
+    type: "Execution-ready systems",
+    stat: "Real-world delivery",
     summary:
-      "An editorial-first content engine built to release weekly narrative drops with high-aesthetic consistency.",
+      "We refine and produce assets that match the brief and can scale through repeatable creative systems where needed.",
     tone: "from-[#606878] via-[#272b33] to-[#0a0a0a]"
   }
 ];
 
 const process = [
-  ["Frame", "Find the cultural pressure point, then define the brand position worth dramatizing."],
-  ["Worldbuild", "Translate strategy into image systems, mood grammar, and narrative structures."],
-  ["Produce", "Move through AI-native production with hands-on creative direction and ruthless curation."],
-  ["Launch", "Deliver deployable assets plus repeatable systems the team can scale after launch."]
+  ["Imagine", "We define the vision, audience, tone, references, and creative opportunity."],
+  ["Prototype", "We rapidly explore directions across words, images, video, audio, and references to find the strongest route forward."],
+  ["Refine", "We edit, align, and sharpen the work so the output matches the brand, the brief, and the intended creative direction."],
+  ["Produce", "We turn the approved direction into production-ready visuals, video, and campaign assets."],
+  ["Scale", "Where needed, we build creative systems that make future production faster, smarter, and more consistent."]
 ];
 
 export default function HomePage() {
@@ -68,15 +69,19 @@ export default function HomePage() {
             <div className="absolute inset-0 bg-[linear-gradient(120deg,rgba(255,255,255,0.08),transparent_35%),linear-gradient(320deg,rgba(244,76,43,0.14),transparent_45%)]" />
             <div className="absolute -left-24 top-10 h-52 w-52 rounded-full bg-[#f44c2b]/40 blur-[120px]" />
             <p className="relative max-w-fit border border-white/30 px-3 py-1 text-[0.62rem] uppercase tracking-[0.35em] text-white/80">
-              Creative XDM / Integrated AI-native creative agency
+              Creative XDM is an AI-native creative studio that turns vision into production-ready visuals, video, and creative systems.
             </p>
 
             <h1 className="relative mt-8 max-w-4xl font-serif text-[clamp(3.2rem,11vw,9.5rem)] leading-[0.9] tracking-tight text-[#f6f4ef]">
-              We turn your vision into creative reality.
+              We turn your vision into creative reality
             </h1>
 
             <p className="relative mt-8 max-w-xl text-base leading-relaxed text-[#d7d1c6] md:text-lg">
-              Strategy, campaigns, and AI-native creative systems delivered by one integrated partner.
+              From concept to campaign-ready assets, we help brands create standout work with more speed, originality, and control.
+            </p>
+
+            <p className="relative mt-5 max-w-2xl text-sm leading-relaxed text-[#d2cbbd] md:text-base">
+              Faster than traditional production. More original than template-driven AI.
             </p>
 
             <div className="relative mt-12 flex flex-wrap items-center gap-4">
@@ -84,7 +89,7 @@ export default function HomePage() {
                 Start a Project
               </button>
               <button className="rounded-full border border-white/45 px-8 py-3 text-xs font-semibold uppercase tracking-[0.2em] text-white transition hover:bg-white/10">
-                View featured work
+                See how we work
               </button>
             </div>
           </div>
@@ -98,9 +103,7 @@ export default function HomePage() {
             <div>
               <p className="text-xs uppercase tracking-[0.28em] text-[#b8b2a7]">Services</p>
               <h2 className="mt-6 font-serif text-5xl leading-[0.95] text-[#f6f4ef] md:text-7xl">
-                Integrated capabilities
-                <br />
-                for modern brand growth.
+                What we do
               </h2>
             </div>
 
@@ -125,15 +128,13 @@ export default function HomePage() {
         <Reveal>
           <div className="mb-10 flex items-end justify-between gap-6">
             <div>
-              <p className="text-xs uppercase tracking-[0.28em] text-[#b8b2a7]">Featured work</p>
+              <p className="text-xs uppercase tracking-[0.28em] text-[#b8b2a7]">Process</p>
               <h2 className="mt-5 max-w-4xl font-serif text-5xl leading-[0.95] text-[#f6f4ef] md:text-7xl">
-                More taste,
-                <br />
-                less template.
+                Multimodal process
               </h2>
             </div>
             <p className="hidden max-w-sm text-sm leading-relaxed text-[#d2cbbd] lg:block">
-              We combine strategic direction, premium craft, and AI-native systems to deliver work that performs now and compounds over time.
+              We use a multimodal creative process that brings together words, images, video, audio, references, and creative direction to turn early ideas into production-ready work. Instead of relying on text prompts alone, we build from the same mix of inputs real creative teams already use, helping create stronger concepts, faster iterations, and more aligned outcomes.
             </p>
           </div>
         </Reveal>
@@ -167,10 +168,10 @@ export default function HomePage() {
           <div className="border border-white/15 bg-[#121110] p-8 md:p-10">
             <p className="text-xs uppercase tracking-[0.28em] text-[#b8b2a7]">About</p>
             <h2 className="mt-6 font-serif text-4xl leading-tight text-[#f6f4ef] md:text-6xl">
-              We operate as a strategic creative partner, not a production vendor.
+              Creative built for the pace of now
             </h2>
             <p className="mt-6 max-w-2xl text-base leading-relaxed text-[#d2cbbd]">
-              Creative XDM is an integrated agency that helps brands define their creative direction, launch standout campaigns, and install AI-native ways of working. We partner with ambitious teams that want measurable outcomes and premium execution.
+              Creative XDM blends creative direction, AI-native workflows, and production thinking to help brands move from idea to execution without the usual bottlenecks. We create visuals, video, and scalable creative systems designed to be original, effective, and ready for real-world use.
             </p>
           </div>
         </Reveal>
@@ -178,7 +179,10 @@ export default function HomePage() {
         <Reveal delay={0.1}>
           <div className="relative overflow-hidden border border-white/15 p-8 md:p-10">
             <div className="absolute inset-0 bg-[linear-gradient(160deg,rgba(255,255,255,0.06),transparent_40%),radial-gradient(circle_at_90%_10%,rgba(244,76,43,0.16),transparent_38%)]" />
-            <h3 className="relative text-xs uppercase tracking-[0.26em] text-[#b8b2a7]">Process</h3>
+            <h3 className="relative text-xs uppercase tracking-[0.26em] text-[#b8b2a7]">How we work</h3>
+            <p className="relative mt-4 text-sm leading-relaxed text-[#d2cbbd]">
+              Our multimodal process is built to move quickly from vision to output while keeping quality, originality, and control intact.
+            </p>
             <div className="relative mt-5 space-y-5">
               {process.map(([title, text], idx) => (
                 <div key={title} className="border-b border-white/15 pb-4 last:border-none">
