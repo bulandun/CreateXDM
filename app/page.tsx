@@ -42,9 +42,9 @@ const featuredWork = [
   {
     title: "CREATIVE TECH TOOLS",
     type: "Execution-ready systems",
-    stat: "Real-world delivery",
+    stat: "Creative Tools Built Around Your Business",
     summary:
-      "We refine and produce assets that match the brief and can scale through repeatable creative systems where needed.",
+      "We build custom creative tech tools tailored to your business requirements, creating solutions that streamline workflows, improve efficiency, and give your team more control over how creative work is produced.",
     tone: "from-[#606878] via-[#272b33] to-[#0a0a0a]",
     mediaSrc: "/images/production-ready-output.svg",
     mediaAlt: "UNBLANK THE CANVAS collage artwork"
