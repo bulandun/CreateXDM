@@ -69,7 +69,7 @@ export default function HomePage() {
             <div className="absolute inset-0 bg-[linear-gradient(120deg,rgba(255,255,255,0.08),transparent_35%),linear-gradient(320deg,rgba(244,76,43,0.14),transparent_45%)]" />
             <div className="absolute -left-24 top-10 h-52 w-52 rounded-full bg-[#f44c2b]/40 blur-[120px]" />
             <p className="relative max-w-fit border border-white/30 px-3 py-1 text-[0.62rem] uppercase tracking-[0.35em] text-white/80">
-              Creative XDM is an AI-native creative studio that turns vision into production-ready visuals, video, and creative systems.
+              Creative XDM Redefining the future of the creative studio.
             </p>
 
             <h1 className="relative mt-8 max-w-4xl font-serif text-[clamp(3.2rem,11vw,9.5rem)] leading-[0.9] tracking-tight text-[#f6f4ef]">
