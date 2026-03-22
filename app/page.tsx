@@ -68,13 +68,18 @@ export default function HomePage() {
           <div className="relative min-h-[70vh] overflow-hidden rounded-[2rem] border border-white/15 bg-[#111111] p-8 md:p-12">
             <div className="absolute inset-0 bg-[linear-gradient(120deg,rgba(255,255,255,0.08),transparent_35%),linear-gradient(320deg,rgba(244,76,43,0.14),transparent_45%)]" />
             <div className="absolute -left-24 top-10 h-52 w-52 rounded-full bg-[#f44c2b]/40 blur-[120px]" />
-            <div className="relative inline-flex max-w-fit items-baseline rounded-md border border-white/20 bg-black/30 px-4 py-3">
-              <span className="text-[clamp(2rem,5.5vw,4.6rem)] font-light tracking-tight text-[#f6f4ef]">
-                Create
-              </span>
-              <span className="text-[clamp(2rem,5.5vw,4.6rem)] font-semibold tracking-tight text-[#f6f4ef]">
-                XDM
-              </span>
+            <div className="relative inline-flex max-w-fit flex-wrap items-center gap-4 rounded-md bg-black/30 px-4 py-3">
+              <div className="inline-flex items-baseline">
+                <span className="text-[clamp(1.5rem,4vw,3.2rem)] font-light tracking-tight text-[#f6f4ef]">
+                  Create
+                </span>
+                <span className="text-[clamp(1.5rem,4vw,3.2rem)] font-semibold tracking-tight text-[#f6f4ef]">
+                  XDM
+                </span>
+              </div>
+              <p className="text-xs uppercase tracking-[0.2em] text-[#d7d1c6] md:text-sm">
+                Redefining the future of the creative studio
+              </p>
             </div>
 
             <h1 className="relative mt-8 max-w-4xl font-serif text-[clamp(3.2rem,11vw,9.5rem)] leading-[0.9] tracking-tight text-[#f6f4ef]">
