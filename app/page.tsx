@@ -62,7 +62,7 @@ export default function HomePage() {
     <main className="relative overflow-x-clip pb-24">
       <div className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(circle_at_15%_10%,rgba(244,76,43,0.15),transparent_35%),radial-gradient(circle_at_85%_15%,rgba(255,255,255,0.09),transparent_35%),linear-gradient(180deg,#111111_0%,#0a0a0a_45%,#090909_100%)]" />
 
-      <section className="mx-auto grid w-full max-w-[1500px] gap-8 px-6 pb-14 pt-10 md:px-12 lg:grid-cols-[1.1fr_0.9fr] lg:pt-14">
+      <section className="mx-auto w-full max-w-[1500px] px-6 pb-14 pt-10 md:px-12 lg:pt-14">
         <Reveal>
           <div className="relative min-h-[70vh] overflow-hidden rounded-[2rem] border border-white/15 bg-[#111111] p-8 md:p-12">
             <div className="absolute inset-0 bg-[linear-gradient(120deg,rgba(255,255,255,0.08),transparent_35%),linear-gradient(320deg,rgba(244,76,43,0.14),transparent_45%)]" />
@@ -90,20 +90,6 @@ export default function HomePage() {
           </div>
         </Reveal>
 
-        <Reveal delay={0.1}>
-          <div className="grid h-full gap-6">
-            <article className="relative isolate min-h-64 overflow-hidden rounded-[2rem] border border-white/15 bg-black p-8">
-              <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=1600&q=80')] bg-cover bg-center opacity-45" />
-              <div className="absolute inset-0 bg-gradient-to-t from-black via-black/70 to-black/40" />
-              <div className="relative">
-                <p className="text-xs uppercase tracking-[0.24em] text-white/70">Signal note</p>
-                <p className="mt-3 max-w-xs text-xl leading-snug text-white">
-                  We design systems where speed scales output, and creative leadership protects brand distinction.
-                </p>
-              </div>
-            </article>
-          </div>
-        </Reveal>
       </section>
 
       <section className="mx-auto w-full max-w-[1500px] px-6 md:px-12">
