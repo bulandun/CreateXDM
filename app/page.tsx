@@ -88,11 +88,7 @@ export default function HomePage() {
             </h1>
 
             <p className="relative mt-8 max-w-xl text-base leading-relaxed text-[#d7d1c6] md:text-lg">
-              From concept to campaign-ready assets, we help brands create standout work with more speed, originality, and control.
-            </p>
-
-            <p className="relative mt-5 max-w-2xl text-sm leading-relaxed text-[#d2cbbd] md:text-base">
-              Faster than traditional production. More original than template-driven AI.
+              We are experts in generative AI creative technology, creating visuals and video, designing smarter creative supply chains, and developing new creative tech solutions.
             </p>
 
             <div className="relative mt-12 flex flex-wrap items-center gap-4">
