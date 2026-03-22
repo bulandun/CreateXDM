@@ -51,7 +51,8 @@ const featuredWork = [
     summary:
       "We refine and produce assets that match the brief and can scale through repeatable creative systems where needed.",
     tone: "from-[#606878] via-[#272b33] to-[#0a0a0a]",
-    mediaAlt: "Production-ready output abstract gradient"
+    mediaSrc: "/images/production-ready-output.svg",
+    mediaAlt: "UNBLANK THE CANVAS collage artwork"
   }
 ];
 
