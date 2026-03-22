@@ -137,7 +137,7 @@ export default function HomePage() {
             <div>
               <p className="text-xs uppercase tracking-[0.28em] text-[#b8b2a7]">Process</p>
               <h2 className="mt-5 max-w-4xl font-serif text-5xl leading-[0.95] text-[#f6f4ef] md:text-7xl">
-                Multimodal process
+                Taste Not Template
               </h2>
             </div>
             <p className="hidden max-w-sm text-sm leading-relaxed text-[#d2cbbd] lg:block">
