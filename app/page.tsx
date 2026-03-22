@@ -61,7 +61,7 @@ const process = [
 export default function HomePage() {
   return (
     <main className="relative overflow-x-clip pb-24">
-      <div className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(circle_at_15%_10%,rgba(244,76,43,0.15),transparent_35%),radial-gradient(circle_at_85%_15%,rgba(255,255,255,0.09),transparent_35%),linear-gradient(180deg,#111111_0%,#0a0a0a_45%,#090909_100%)]" />
+      <div className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(circle_at_12%_8%,rgba(242,228,206,0.16),transparent_34%),radial-gradient(circle_at_22%_18%,rgba(189,124,76,0.18),transparent_38%),radial-gradient(circle_at_85%_15%,rgba(255,255,255,0.08),transparent_35%),linear-gradient(180deg,#111111_0%,#0a0a0a_45%,#090909_100%)]" />
 
       <section className="mx-auto w-full max-w-[1500px] px-6 pb-14 pt-10 md:px-12 lg:pt-14">
         <Reveal>
