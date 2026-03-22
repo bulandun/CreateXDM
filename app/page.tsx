@@ -22,9 +22,9 @@ const featuredWork = [
   {
     title: "Images + video + audio",
     type: "Rapid prototyping",
-    stat: "Faster iteration",
+    stat: "FASTER ITERATION",
     summary:
-      "We explore creative directions across visuals, video, and sound to quickly identify the strongest route forward.",
+      "We explore creative directions across visuals, video, and sound to quickly identify the strongest route forward. Gen AI Expertise: Our expertise in generative AI ensures you are guided by specialists who understand the latest visual and video generation models, helping bring your vision to life with the most realistic, high-quality results.",
     tone: "from-[#d9d4cd] via-[#6d685f] to-[#101010]",
     mediaSrc: "/images/images-video-audio-eye.svg",
     mediaAlt: "Macro iris close-up"
