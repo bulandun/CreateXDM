@@ -45,7 +45,7 @@ const featuredWork = [
     mediaAlt: "Collage of reference moments connected by arrows"
   },
   {
-    title: "Production-ready output",
+    title: "CREATIVE TECH TOOLS",
     type: "Execution-ready systems",
     stat: "Real-world delivery",
     summary:
