@@ -32,9 +32,9 @@ const featuredWork = [
   {
     title: "CREATIVE SUPPLY CHAIN",
     type: "Multimodal input",
-    stat: "Strategy aligned",
+    stat: "Build Your Creative Supply Chain",
     summary:
-      "We define the vision through language, references, and creative direction so every concept starts from a clear strategic foundation.",
+      "We help guide your team in building a creative supply chain, giving you complete control over your creative production.",
     tone: "from-[#8f8a7f] via-[#1e1d1b] to-[#090909]",
     mediaSrc: "/images/words-references-collage.svg",
     mediaAlt: "Collage of reference moments connected by arrows"
