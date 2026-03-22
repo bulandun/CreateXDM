@@ -35,7 +35,7 @@ const featuredWork = [
     mediaAlt: "Macro iris close-up"
   },
   {
-    title: "Words + references",
+    title: "CREATIVE SUPPLY CHAIN",
     type: "Multimodal input",
     stat: "Strategy aligned",
     summary:
