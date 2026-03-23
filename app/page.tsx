@@ -1,4 +1,5 @@
 import { Reveal } from "@/components/reveal";
+import Link from "next/link";
 
 const services = [
   {
@@ -27,7 +28,8 @@ const featuredWork = [
       "We explore creative directions across visuals, video, and sound to quickly identify the strongest route forward. Gen AI Expertise: Our expertise in generative AI ensures you are guided by specialists who understand the latest visual and video generation models, helping bring your vision to life with the most realistic, high-quality results.",
     tone: "from-[#d9d4cd] via-[#6d685f] to-[#101010]",
     mediaSrc: "/images/images-video-audio-eye.svg",
-    mediaAlt: "Macro iris close-up"
+    mediaAlt: "Macro iris close-up",
+    href: "/visuals-video-audio"
   },
   {
     title: "CREATIVE SUPPLY CHAIN",
@@ -168,9 +170,18 @@ export default function HomePage() {
                 <div className="flex flex-col justify-between p-8 md:p-12">
                   <p className="text-sm uppercase tracking-[0.2em] text-[#b8b2a7]">{project.stat}</p>
                   <p className="mt-8 max-w-md text-base leading-relaxed text-[#d2cbbd]">{project.summary}</p>
-                  <button className="mt-6 w-fit border border-white/30 px-5 py-2 text-xs uppercase tracking-[0.2em] text-white transition group-hover:bg-white group-hover:text-black">
-                    View case study
-                  </button>
+                  {project.href ? (
+                    <Link
+                      href={project.href}
+                      className="mt-6 w-fit border border-white/30 px-5 py-2 text-xs uppercase tracking-[0.2em] text-white transition group-hover:bg-white group-hover:text-black"
+                    >
+                      View case study
+                    </Link>
+                  ) : (
+                    <button className="mt-6 w-fit border border-white/30 px-5 py-2 text-xs uppercase tracking-[0.2em] text-white transition group-hover:bg-white group-hover:text-black">
+                      View case study
+                    </button>
+                  )}
                 </div>
               </article>
             </Reveal>
