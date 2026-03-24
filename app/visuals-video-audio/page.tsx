@@ -3,12 +3,12 @@ import Link from "next/link";
 export default function VisualsVideoAudioPage() {
   return (
     <main className="mx-auto w-full max-w-[1500px] px-6 py-12 md:px-12">
-      <section className="grid overflow-hidden rounded-[2rem] border border-white/15 bg-black lg:grid-cols-[1.1fr_0.9fr]">
+      <section className="grid overflow-hidden rounded-[2rem] border border-white/15 bg-black lg:grid-cols-[1.05fr_0.95fr]">
         <div className="relative min-h-[24rem] bg-gradient-to-br from-[#d9d4cd] via-[#6d685f] to-[#101010] p-8 md:min-h-[30rem] md:p-12">
           <img
             src="/images/images-video-audio-eye.svg"
             alt="Macro iris close-up"
-            className="absolute inset-0 h-full w-full object-cover"
+            className="absolute inset-0 h-full w-full scale-[0.3] object-contain"
           />
           <div className="absolute inset-0 bg-black/35" />
           <h1 className="relative mt-4 max-w-xl font-serif text-4xl uppercase leading-[0.9] text-[#f7f5ef] md:text-6xl">
@@ -24,9 +24,9 @@ export default function VisualsVideoAudioPage() {
             understand the latest visual and video generation models, helping bring your vision to life with the most
             realistic, high-quality results.
           </p>
-          <div className="mt-8 overflow-hidden rounded-2xl border border-white/15 bg-black/40">
+          <div className="mt-8 overflow-hidden rounded-2xl border border-white/15 bg-black/40 md:min-h-[24rem]">
             <video
-              className="h-full w-full"
+              className="h-full min-h-[18rem] w-full object-cover md:min-h-[24rem]"
               src="/videos/showreel.mp4"
               controls
               preload="metadata"
