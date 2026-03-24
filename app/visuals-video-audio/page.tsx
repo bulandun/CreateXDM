@@ -24,9 +24,20 @@ export default function VisualsVideoAudioPage() {
             understand the latest visual and video generation models, helping bring your vision to life with the most
             realistic, high-quality results.
           </p>
+          <div className="mt-8 overflow-hidden rounded-2xl border border-white/15 bg-black/40">
+            <video
+              className="h-full w-full"
+              src="/videos/showreel.mp4"
+              controls
+              preload="metadata"
+              playsInline
+            >
+              Your browser does not support the video tag.
+            </video>
+          </div>
           <Link
             href="/"
-            className="mt-6 w-fit border border-white/30 px-5 py-2 text-xs uppercase tracking-[0.2em] text-white transition hover:bg-white hover:text-black"
+            className="mt-8 w-fit border border-white/30 px-5 py-2 text-xs uppercase tracking-[0.2em] text-white transition hover:bg-white hover:text-black"
           >
             Back to home
           </Link>
