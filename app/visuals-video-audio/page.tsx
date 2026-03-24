@@ -12,7 +12,7 @@ export default function VisualsVideoAudioPage() {
             understand the latest visual and video generation models, helping bring your vision to life with the most
             realistic, high-quality results.
           </p>
-          <div className="mt-8 overflow-hidden rounded-2xl border border-white/15 bg-black/40 md:min-h-[24rem]">
+          <div className="mt-8 mx-auto w-4/5 overflow-hidden rounded-2xl border border-white/15 bg-black/40 md:min-h-[24rem]">
             <video
               className="h-full min-h-[18rem] w-full object-cover md:min-h-[24rem]"
               src="/videos/showreel.mp4"
