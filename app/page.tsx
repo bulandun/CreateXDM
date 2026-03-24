@@ -69,8 +69,19 @@ export default function HomePage() {
       <section className="mx-auto w-full max-w-[1500px] px-6 pb-14 pt-10 md:px-12 lg:pt-14">
         <Reveal>
           <div className="relative min-h-[70vh] overflow-hidden rounded-[2rem] border border-white/15 bg-[#111111] p-8 md:p-12">
-            <div className="absolute inset-0 bg-[linear-gradient(120deg,rgba(255,255,255,0.08),transparent_35%),linear-gradient(320deg,rgba(244,76,43,0.14),transparent_45%)]" />
-            <div className="absolute -left-24 top-10 h-52 w-52 rounded-full bg-[#f44c2b]/40 blur-[120px]" />
+  <video
+    className="absolute inset-0 h-full w-full object-cover"
+    autoPlay
+    muted
+    loop
+    playsInline
+  >
+    <source src="/videos/showreel.mp4" type="video/mp4" />
+  </video>
+  <div className="absolute inset-0 bg-black/45" />
+  <div className="absolute inset-0 bg-[linear-gradient(120deg,rgba(255,255,255,0.08),transparent_35%),linear-gradient(320deg,rgba(244,76,43,0.14),transparent_45%)]" />
+  <div className="absolute -left-24 top-10 h-52 w-52 rounded-full bg-[#f44c2b]/40 blur-[120px]" />
+        
             <div className="absolute right-[9%] top-[14%] h-72 w-72 rounded-full bg-[radial-gradient(circle_at_30%_30%,rgba(247,235,221,0.58),rgba(255,116,46,0.34)_40%,rgba(120,74,52,0.14)_68%,rgba(12,18,24,0)_100%)] opacity-45 blur-[20px]" />
             <div className="relative inline-flex max-w-fit flex-wrap items-center gap-4 rounded-md bg-black/30 px-4 py-3">
               <div className="inline-flex items-baseline">
