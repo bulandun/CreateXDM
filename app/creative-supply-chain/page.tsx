@@ -265,6 +265,11 @@ export default function CreativeSupplyChainPage() {
             The key is repetition. Reuse the same wording every time. Do not casually swap “navy waterproof jacket”
             for “blue raincoat” in the next prompt. Small changes can lead the model to produce a different person.
           </p>
+          <div className="my-8 overflow-hidden rounded-2xl border border-white/15 bg-black/40">
+            <video className="h-full w-full object-cover" src="/videos/vid4.mp4" controls preload="metadata" playsInline>
+              Your browser does not support the video tag.
+            </video>
+          </div>
           <h4>Solution 2: Use Image Anchors</h4>
           <p>
             A stronger method is to first generate a high-quality still image of the character and then use that image
