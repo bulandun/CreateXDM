@@ -50,7 +50,8 @@ const featuredWork = [
       "We build custom creative tech tools tailored to your business requirements, creating solutions that streamline workflows, improve efficiency, and give your team more control over how creative work is produced.",
     tone: "from-[#606878] via-[#272b33] to-[#0a0a0a]",
     mediaSrc: "/images/production-ready-output.svg",
-    mediaAlt: "UNBLANK THE CANVAS collage artwork"
+    mediaAlt: "UNBLANK THE CANVAS collage artwork",
+    href: "https://www.designxdm.com"
   }
 ];
 
