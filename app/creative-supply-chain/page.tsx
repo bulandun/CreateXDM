@@ -233,6 +233,11 @@ export default function CreativeSupplyChainPage() {
             while cigarette smoke drifts through the beam of light. The camera slowly pushes in from the audience
             perspective. Moody 1950s club atmosphere, rich contrast, shallow depth of field.
           </p>
+          <div className="my-8 overflow-hidden rounded-2xl border border-white/15 bg-black/40">
+            <video className="h-full w-full object-cover" src="/videos/vid3.mp4" controls preload="metadata" playsInline>
+              Your browser does not support the video tag.
+            </video>
+          </div>
 
           <h2>Advanced Techniques for Cinematic Consistency</h2>
           <p>
