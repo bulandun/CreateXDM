@@ -303,6 +303,11 @@ export default function CreativeSupplyChainPage() {
             with brushed steel surfaces, cold cyan practical lighting, and soft reflections on glass panels. Cinematic
             but restrained. Slight film grain. Controlled camera movement. Serious tone.
           </p>
+          <div className="my-8 overflow-hidden rounded-2xl border border-white/15 bg-black/40">
+            <video className="h-full w-full object-cover" src="/videos/vid5.mp4" controls preload="metadata" playsInline>
+              Your browser does not support the video tag.
+            </video>
+          </div>
 
           <h4>Solution 3: Maintain Lexical Consistency</h4>
           <p>
