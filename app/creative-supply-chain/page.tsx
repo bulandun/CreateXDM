@@ -101,6 +101,11 @@ export default function CreativeSupplyChainPage() {
             constraints.
           </p>
           <p>Once the latent video is sufficiently clean, it is decoded back into viewable frames.</p>
+          <div className="my-8 overflow-hidden rounded-2xl border border-white/15 bg-black/40">
+            <video className="h-full w-full object-cover" src="/videos/vid1.mp4" controls preload="metadata" playsInline>
+              Your browser does not support the video tag.
+            </video>
+          </div>
 
           <h3>The Transformer: Understanding Time, Structure, and Continuity</h3>
           <p>
