@@ -185,12 +185,12 @@ export default function HomePage() {
                   {project.href ? (
                     <Link
                       href={project.href}
-                      className="mt-6 w-fit border border-white/30 px-5 py-2 text-xs uppercase tracking-[0.2em] text-white transition group-hover:bg-white group-hover:text-black"
+                      className="mt-6 w-fit bg-[#f6f4ef] px-5 py-2 text-xs uppercase tracking-[0.2em] text-black transition hover:-translate-y-0.5 hover:bg-white"
                     >
                       View case study
                     </Link>
                   ) : (
-                    <button className="mt-6 w-fit border border-white/30 px-5 py-2 text-xs uppercase tracking-[0.2em] text-white transition group-hover:bg-white group-hover:text-black">
+                    <button className="mt-6 w-fit bg-[#f6f4ef] px-5 py-2 text-xs uppercase tracking-[0.2em] text-black transition hover:-translate-y-0.5 hover:bg-white">
                       View case study
                     </button>
                   )}
