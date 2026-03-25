@@ -28,6 +28,11 @@ export default function CreativeSupplyChainPage() {
             frame. With models like Google Veo, that challenge is beginning to look less like an unsolved research
             problem and more like a new creative medium.
           </p>
+          <div className="my-8 overflow-hidden rounded-2xl border border-white/15 bg-black/40">
+            <video className="h-full w-full object-cover" src="/videos/vid1.a.mp4" controls preload="metadata" playsInline>
+              Your browser does not support the video tag.
+            </video>
+          </div>
           <p>
             This is not simply a tool for making clips from text. It represents a shift toward procedural filmmaking,
             where direction, cinematography, timing, and scene construction can all be steered through language and
