@@ -222,6 +222,11 @@ export default function CreativeSupplyChainPage() {
           <p>
             <strong>Weak Prompt:</strong> A musician performing on stage.
           </p>
+          <div className="my-8 overflow-hidden rounded-2xl border border-white/15 bg-black/40">
+            <video className="h-full w-full object-cover" src="/videos/vid2.mp4" controls preload="metadata" playsInline>
+              Your browser does not support the video tag.
+            </video>
+          </div>
           <p>
             <strong>Stronger Directorial Prompt:</strong> Cinematic medium-wide shot of a jazz pianist in a white
             dinner jacket performing alone on a dimly lit stage. A single spotlight isolates him against the darkness
