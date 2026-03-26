@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 export default function CreativeSupplyChainPage() {
   return (
     <main className="mx-auto w-full max-w-[1100px] px-6 py-12 md:px-12">
-      <article className="rounded-[2rem] border border-white/15 bg-[#0f0f0f] p-8 md:p-12">
+      <article className="panel-gradient rounded-[2rem] border border-white/15 p-8 md:p-12">
         <header className="border-b border-white/10 pb-8">
           <p className="text-xs uppercase tracking-[0.2em] text-[#b8b2a7]">Creative Supply Chain</p>
           <h1 className="mt-5 font-serif text-3xl leading-tight text-[#f6f4ef] md:text-5xl">

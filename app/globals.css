@@ -17,6 +17,16 @@
   }
 }
 
+@layer components {
+  .panel-gradient {
+    background-color: #050505;
+    background-image:
+      radial-gradient(circle at 60% 55%, rgba(118, 40, 20, 0.5) 0%, rgba(70, 25, 14, 0.24) 34%, rgba(5, 5, 5, 0) 72%),
+      radial-gradient(circle at 28% 35%, rgba(95, 33, 18, 0.44) 0%, rgba(56, 21, 12, 0.22) 38%, rgba(5, 5, 5, 0) 74%),
+      linear-gradient(160deg, #060606 0%, #040404 56%, #020202 100%);
+  }
+}
+
 * {
   border-color: rgba(255, 255, 255, 0.16);
 }
