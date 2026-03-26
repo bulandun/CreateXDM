@@ -86,16 +86,8 @@ export default function HomePage() {
         
             <div className="absolute right-[9%] top-[14%] h-72 w-72 rounded-full bg-[radial-gradient(circle_at_30%_30%,rgba(247,235,221,0.58),rgba(255,116,46,0.34)_40%,rgba(120,74,52,0.14)_68%,rgba(12,18,24,0)_100%)] opacity-45 blur-[20px]" />
             <div className="relative inline-flex max-w-fit flex-wrap items-center gap-4 rounded-md bg-black/30 px-4 py-3">
-              <div className="inline-flex items-baseline">
-                <span className="text-[clamp(1.5rem,4vw,3.2rem)] font-light tracking-tight text-[#f6f4ef]">
-                  Create
-                </span>
-                <span className="text-[clamp(1.5rem,4vw,3.2rem)] font-semibold tracking-tight text-[#f6f4ef]">
-                  XDM
-                </span>
-              </div>
               <p className="text-xs uppercase tracking-[0.2em] text-[#d7d1c6] md:text-sm">
-                Redefining the future of the creative studio
+                Portfolio of Brendan Donnelly - Redefining the future of the creative studio
               </p>
             </div>
 
