@@ -8,7 +8,16 @@ type VideoWithPosterProps = Omit<VideoHTMLAttributes<HTMLVideoElement>, "poster"
   poster?: string;
 };
 
-const THUMBNAIL_SECOND = 1.5;
+const MIN_PREVIEW_SECOND = 1.5;
+const MAX_PREVIEW_PERCENT = 0.75;
+
+function pickPreviewTime(duration: number): number {
+  if (!Number.isFinite(duration) || duration <= 0) return 0;
+
+  const midPoint = duration * 0.5;
+  const clampedByDuration = Math.min(midPoint, duration * MAX_PREVIEW_PERCENT);
+  return Math.min(Math.max(MIN_PREVIEW_SECOND, clampedByDuration), Math.max(0, duration - 0.1));
+}
 
 function generateVideoPoster(src: string): Promise<string | null> {
   return new Promise((resolve) => {
@@ -41,7 +50,7 @@ function generateVideoPoster(src: string): Promise<string | null> {
       }
 
       const duration = Number.isFinite(video.duration) ? video.duration : 0;
-      const targetTime = duration > 0 ? Math.min(THUMBNAIL_SECOND, Math.max(0, duration - 0.1)) : 0;
+      const targetTime = pickPreviewTime(duration);
 
       if (targetTime === 0) {
         try {
