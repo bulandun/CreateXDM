@@ -100,9 +100,6 @@ export default function HomePage() {
             </p>
 
             <div className="relative mt-12 flex flex-wrap items-center gap-4">
-              <button className="rounded-full bg-[#f6f4ef] px-8 py-3 text-xs font-semibold uppercase tracking-[0.2em] text-black transition hover:-translate-y-0.5">
-                Start a Project
-              </button>
               <button className="rounded-full border border-white/45 px-8 py-3 text-xs font-semibold uppercase tracking-[0.2em] text-white transition hover:bg-white/10">
                 See how I work
               </button>
