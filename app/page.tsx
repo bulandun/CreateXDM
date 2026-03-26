@@ -1,4 +1,5 @@
 import { Reveal } from "@/components/reveal";
+import { VideoWithPoster } from "@/components/video-with-poster";
 import Link from "next/link";
 
 const services = [
@@ -71,15 +72,14 @@ export default function HomePage() {
       <section className="mx-auto w-full max-w-[1500px] px-6 pb-14 pt-10 md:px-12 lg:pt-14">
         <Reveal>
           <div className="relative min-h-[70vh] overflow-hidden rounded-[2rem] border border-white/15 bg-[#111111] p-8 md:p-12">
-  <video
+  <VideoWithPoster
     className="absolute inset-0 h-full w-full object-cover"
+    src="/videos/showreel.mp4"
     autoPlay
     muted
     loop
     playsInline
-  >
-    <source src="/videos/showreel.mp4" type="video/mp4" />
-  </video>
+  />
   <div className="absolute inset-0 bg-black/45" />
   <div className="absolute inset-0 bg-[linear-gradient(120deg,rgba(255,255,255,0.08),transparent_35%),linear-gradient(320deg,rgba(244,76,43,0.14),transparent_45%)]" />
   <div className="absolute -left-24 top-10 h-52 w-52 rounded-full bg-[#f44c2b]/40 blur-[120px]" />
