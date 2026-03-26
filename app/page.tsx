@@ -26,7 +26,7 @@ const featuredWork = [
     type: "Rapid prototyping",
     stat: "FASTER ITERATION",
     summary:
-      "We explore creative directions across visuals, video, and sound to quickly identify the strongest route forward. Gen AI Expertise: Our expertise in generative AI ensures you are guided by specialists who understand the latest visual and video generation models, helping bring your vision to life with the most realistic, high-quality results.",
+      "I explore creative directions across visuals, video, and sound to quickly identify the strongest route forward. Gen AI Expertise: Our expertise in generative AI ensures you are guided by specialists who understand the latest visual and video generation models, helping bring your vision to life with the most realistic, high-quality results.",
     tone: "from-[#d9d4cd] via-[#6d685f] to-[#101010]",
     mediaSrc: "/images/images-video-audio-eye.svg",
     mediaAlt: "Macro iris close-up",
@@ -37,7 +37,7 @@ const featuredWork = [
     type: "Multimodal input",
     stat: "Build Your Creative Supply Chain",
     summary:
-      "We help guide your team in building a creative supply chain that gives you complete control over your creative AI production, creating clearer workflows, stronger consistency, faster turnaround times, and better visibility across every stage of the process.",
+      "I help guide your team in building a creative supply chain that gives you complete control over your creative AI production, creating clearer workflows, stronger consistency, faster turnaround times, and better visibility across every stage of the process.",
     tone: "from-[#8f8a7f] via-[#1e1d1b] to-[#090909]",
     mediaSrc: "/images/words-references-collage.svg",
     mediaAlt: "Collage of reference moments connected by arrows",
@@ -48,7 +48,7 @@ const featuredWork = [
     type: "Execution-ready systems",
     stat: "Creative Tools Built Around Your Business",
     summary:
-      "We build custom creative tech tools tailored to your business requirements, creating solutions that streamline workflows, improve efficiency, and give your team more control over how creative work is produced.",
+      "I build custom creative tech tools tailored to your business requirements, creating solutions that streamline workflows, improve efficiency, and give your team more control over how creative work is produced.",
     tone: "from-[#606878] via-[#272b33] to-[#0a0a0a]",
     mediaSrc: "/images/production-ready-output.svg",
     mediaAlt: "UNBLANK THE CANVAS collage artwork",
@@ -57,11 +57,11 @@ const featuredWork = [
 ];
 
 const process = [
-  ["Imagine", "We define the vision, audience, tone, references, and creative opportunity."],
-  ["Prototype", "We rapidly explore directions across words, images, video, audio, and references to find the strongest route forward."],
-  ["Refine", "We edit, align, and sharpen the work so the output matches the brand, the brief, and the intended creative direction."],
-  ["Produce", "We turn the approved direction into production-ready visuals, video, and campaign assets."],
-  ["Scale", "Where needed, we build creative systems that make future production faster, smarter, and more consistent."]
+  ["Imagine", "I define the vision, audience, tone, references, and creative opportunity."],
+  ["Prototype", "I rapidly explore directions across words, images, video, audio, and references to find the strongest route forward."],
+  ["Refine", "I edit, align, and sharpen the work so the output matches the brand, the brief, and the intended creative direction."],
+  ["Produce", "I turn the approved direction into production-ready visuals, video, and campaign assets."],
+  ["Scale", "Where needed, I build creative systems that make future production faster, smarter, and more consistent."]
 ];
 
 export default function HomePage() {
@@ -92,11 +92,11 @@ export default function HomePage() {
             </div>
 
             <h1 className="relative mt-8 max-w-4xl font-serif text-[clamp(3.2rem,11vw,9.5rem)] leading-[0.9] tracking-tight text-[#f6f4ef]">
-              We turn your vision into creative reality
+              I turn your vision into creative reality
             </h1>
 
             <p className="relative mt-8 max-w-xl text-base leading-relaxed text-[#d7d1c6] md:text-lg">
-              We are experts in generative AI creative technology, creating visuals and video, designing smarter creative supply chains, and developing new creative tech solutions.
+              I am experts in generative AI creative technology, creating visuals and video, designing smarter creative supply chains, and developing new creative tech solutions.
             </p>
 
             <div className="relative mt-12 flex flex-wrap items-center gap-4">
@@ -104,7 +104,7 @@ export default function HomePage() {
                 Start a Project
               </button>
               <button className="rounded-full border border-white/45 px-8 py-3 text-xs font-semibold uppercase tracking-[0.2em] text-white transition hover:bg-white/10">
-                See how we work
+                See how I work
               </button>
             </div>
           </div>
