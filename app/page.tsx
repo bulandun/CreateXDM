@@ -202,7 +202,7 @@ export default function HomePage() {
               Creative built for the pace of now
             </h2>
             <p className="mt-6 max-w-2xl text-base leading-relaxed text-[#d2cbbd]">
-              Creative XDM blends creative direction, AI-native workflows, and production thinking to help brands move from idea to execution without the usual bottlenecks. We create visuals, video, and scalable creative systems designed to be original, effective, and ready for real-world use.
+              My skills blends creative direction, AI-native workflows, and production thinking to help brands move from idea to execution without the usual bottlenecks. I create visuals, video, and scalable creative systems designed to be original, effective, and ready for real-world use.
             </p>
           </div>
         </Reveal>
