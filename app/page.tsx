@@ -96,7 +96,7 @@ export default function HomePage() {
             </h1>
 
             <p className="relative mt-8 max-w-xl text-base leading-relaxed text-[#d7d1c6] md:text-lg">
-              I am experts in generative AI creative technology, creating visuals and video, designing smarter creative supply chains, and developing new creative tech solutions.
+              I am an expert in generative AI creative technology, creating visuals and video, designing smarter creative supply chains, and developing new creative tech solutions.
             </p>
 
             <div className="relative mt-12 flex flex-wrap items-center gap-4">
