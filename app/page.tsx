@@ -230,20 +230,12 @@ export default function HomePage() {
         <Reveal>
           <div className="relative overflow-hidden rounded-[2rem] border border-white/20 bg-[#151311] p-8 md:p-14">
             <div className="absolute -right-28 top-8 h-72 w-72 rounded-full bg-[#f44c2b]/35 blur-[120px]" />
-            <p className="relative text-xs uppercase tracking-[0.3em] text-[#d2cbbd]">Contact</p>
-            <h2 className="relative mt-6 max-w-4xl font-serif text-4xl uppercase leading-[0.9] text-[#f6f4ef] md:text-7xl">
-              Let&apos;s build your next campaign platform.
+            <h2 className="relative max-w-4xl font-serif text-4xl leading-[0.95] text-[#f6f4ef] md:text-7xl">
+              Contact me at{" "}
+              <a className="underline decoration-[#f44c2b] underline-offset-4" href="mailto:donnelly_brendan@yahoo.com">
+                donnelly_brendan@yahoo.com
+              </a>
             </h2>
-
-            <form className="relative mt-10 grid gap-4 md:grid-cols-2">
-              <input className="border border-white/25 bg-black/30 p-3 text-sm text-white placeholder:text-white/55 focus:border-[#f44c2b] focus:outline-none" placeholder="Name" />
-              <input className="border border-white/25 bg-black/30 p-3 text-sm text-white placeholder:text-white/55 focus:border-[#f44c2b] focus:outline-none" placeholder="Email" type="email" />
-              <input className="border border-white/25 bg-black/30 p-3 text-sm text-white placeholder:text-white/55 focus:border-[#f44c2b] focus:outline-none md:col-span-2" placeholder="Brand / company" />
-              <textarea className="min-h-36 border border-white/25 bg-black/30 p-3 text-sm text-white placeholder:text-white/55 focus:border-[#f44c2b] focus:outline-none md:col-span-2" placeholder="What are you launching?" />
-              <button className="w-fit bg-[#f6f4ef] px-7 py-3 text-xs font-semibold uppercase tracking-[0.2em] text-black transition hover:-translate-y-0.5 md:col-span-2">
-                Start conversation
-              </button>
-            </form>
           </div>
         </Reveal>
       </section>
