@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { VideoWithPoster } from "@/components/video-with-poster";
 
 export const metadata: Metadata = {
   title: "Creative Supply Chain | CreateXDM",
@@ -26,9 +27,9 @@ export default function CreativeSupplyChainPage() {
             problem and more like a new creative medium.
           </p>
           <div className="my-8 overflow-hidden rounded-2xl border border-white/15 bg-black/40">
-            <video className="h-full w-full object-cover" src="/videos/vid1.a.mp4" controls preload="metadata" playsInline>
+            <VideoWithPoster className="h-full w-full object-cover" src="/videos/vid1.a.mp4" controls preload="metadata" playsInline>
               Your browser does not support the video tag.
-            </video>
+            </VideoWithPoster>
           </div>
           <p>
             This is not simply a tool for making clips from text. It represents a shift toward procedural filmmaking,
@@ -99,9 +100,9 @@ export default function CreativeSupplyChainPage() {
           </p>
           <p>Once the latent video is sufficiently clean, it is decoded back into viewable frames.</p>
           <div className="my-8 overflow-hidden rounded-2xl border border-white/15 bg-black/40">
-            <video className="h-full w-full object-cover" src="/videos/vid1.mp4" controls preload="metadata" playsInline>
+            <VideoWithPoster className="h-full w-full object-cover" src="/videos/vid1.mp4" controls preload="metadata" playsInline>
               Your browser does not support the video tag.
-            </video>
+            </VideoWithPoster>
           </div>
 
           <h3>The Transformer: Understanding Time, Structure, and Continuity</h3>
@@ -192,9 +193,9 @@ export default function CreativeSupplyChainPage() {
             <strong>Weak Prompt:</strong> A musician performing on stage.
           </p>
           <div className="my-8 overflow-hidden rounded-2xl border border-white/15 bg-black/40">
-            <video className="h-full w-full object-cover" src="/videos/vid2.mp4" controls preload="metadata" playsInline>
+            <VideoWithPoster className="h-full w-full object-cover" src="/videos/vid2.mp4" controls preload="metadata" playsInline>
               Your browser does not support the video tag.
-            </video>
+            </VideoWithPoster>
           </div>
           <p>
             <strong>Stronger Directorial Prompt:</strong> Cinematic medium-wide shot of a jazz pianist in a white
@@ -203,9 +204,9 @@ export default function CreativeSupplyChainPage() {
             perspective. Moody 1950s club atmosphere, rich contrast, shallow depth of field.
           </p>
           <div className="my-8 overflow-hidden rounded-2xl border border-white/15 bg-black/40">
-            <video className="h-full w-full object-cover" src="/videos/vid3.mp4" controls preload="metadata" playsInline>
+            <VideoWithPoster className="h-full w-full object-cover" src="/videos/vid3.mp4" controls preload="metadata" playsInline>
               Your browser does not support the video tag.
-            </video>
+            </VideoWithPoster>
           </div>
 
           <h2>Advanced Techniques for Cinematic Consistency</h2>
@@ -235,9 +236,9 @@ export default function CreativeSupplyChainPage() {
             for “blue raincoat” in the next prompt. Small changes can lead the model to produce a different person.
           </p>
           <div className="my-8 overflow-hidden rounded-2xl border border-white/15 bg-black/40">
-            <video className="h-full w-full object-cover" src="/videos/vid4.mp4" controls preload="metadata" playsInline>
+            <VideoWithPoster className="h-full w-full object-cover" src="/videos/vid4.mp4" controls preload="metadata" playsInline>
               Your browser does not support the video tag.
-            </video>
+            </VideoWithPoster>
           </div>
           <h4>Solution 2: Use Image Anchors</h4>
           <p>
@@ -273,9 +274,9 @@ export default function CreativeSupplyChainPage() {
             but restrained. Slight film grain. Controlled camera movement. Serious tone.
           </p>
           <div className="my-8 overflow-hidden rounded-2xl border border-white/15 bg-black/40">
-            <video className="h-full w-full object-cover" src="/videos/vid5.mp4" controls preload="metadata" playsInline>
+            <VideoWithPoster className="h-full w-full object-cover" src="/videos/vid5.mp4" controls preload="metadata" playsInline>
               Your browser does not support the video tag.
-            </video>
+            </VideoWithPoster>
           </div>
 
           <h4>Solution 3: Maintain Lexical Consistency</h4>

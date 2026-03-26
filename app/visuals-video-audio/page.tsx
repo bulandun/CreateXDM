@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { VideoWithPoster } from "@/components/video-with-poster";
 
 export default function VisualsVideoAudioPage() {
   return (
@@ -15,7 +16,7 @@ export default function VisualsVideoAudioPage() {
             </p>
 
             <div className="mx-auto w-[68%] overflow-hidden rounded-2xl border border-white/15 bg-black/40 md:w-[72%] lg:w-full">
-              <video
+              <VideoWithPoster
                 className="h-full min-h-[16rem] w-full object-cover md:min-h-[20rem]"
                 src="/videos/showreel.mp4"
                 controls
@@ -23,7 +24,7 @@ export default function VisualsVideoAudioPage() {
                 playsInline
               >
                 Your browser does not support the video tag.
-              </video>
+              </VideoWithPoster>
             </div>
           </div>
           <Link
