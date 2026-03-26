@@ -230,7 +230,7 @@ export default function HomePage() {
         <Reveal>
           <div className="relative overflow-hidden rounded-[2rem] border border-white/20 bg-[#151311] p-8 md:p-14">
             <div className="absolute -right-28 top-8 h-72 w-72 rounded-full bg-[#f44c2b]/35 blur-[120px]" />
-            <h2 className="relative max-w-4xl font-serif text-[0.45rem] leading-[0.95] text-[#f6f4ef] md:text-[0.7rem]">
+            <h2 className="relative max-w-4xl font-serif text-[0.675rem] leading-[0.95] text-[#f6f4ef] md:text-[1.05rem]">
               Contact me at{" "}
               <a className="underline decoration-[#f44c2b] underline-offset-4" href="mailto:donnelly_brendan@yahoo.com">
                 donnelly_brendan@yahoo.com
