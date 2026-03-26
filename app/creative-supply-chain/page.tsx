@@ -18,7 +18,7 @@ export default function CreativeSupplyChainPage() {
           </h1>
         </header>
 
-        <section className="prose prose-invert mt-8 max-w-none prose-headings:font-serif prose-p:text-[#d2cbbd] prose-li:text-[#d2cbbd]">
+        <section className="prose prose-sm prose-invert mt-8 max-w-none md:prose-base prose-headings:font-serif prose-p:text-[#d2cbbd] prose-li:text-[#d2cbbd]">
           <p>
             The jump from still-image generation to believable moving video has been one of the hardest problems in
             generative AI. A strong image can suggest a world, but video has to sustain that illusion across time.
