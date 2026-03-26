@@ -15,9 +15,6 @@ export default function CreativeSupplyChainPage() {
           <h1 className="mt-5 font-serif text-3xl leading-tight text-[#f6f4ef] md:text-5xl">
             An In-Depth Guide to the Architecture, Prompting, and Workflows Behind Generative Video Model
           </h1>
-          <p className="mt-4 text-sm text-[#d2cbbd] md:text-base">
-            Video 1: A lone astronaut crossing a salt desert at sunrise
-          </p>
         </header>
 
         <section className="prose prose-invert mt-8 max-w-none prose-headings:font-serif prose-p:text-[#d2cbbd] prose-li:text-[#d2cbbd]">
