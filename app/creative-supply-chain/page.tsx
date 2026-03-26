@@ -169,51 +169,23 @@ export default function CreativeSupplyChainPage() {
 
           <h4>4. Style</h4>
           <p>How should the shot feel visually?</p>
-          <ul>
-            <li>cinematic 16mm documentary footage</li>
-            <li>high-end fashion campaign aesthetic</li>
-            <li>soft pastel stop-motion look</li>
-            <li>hyperreal, premium commercial lighting</li>
-            <li>surveillance-camera realism with slight digital noise</li>
-          </ul>
-          <p>Style is often what separates a usable output from a generic one.</p>
+          <p>
+            Style can range from cinematic 16mm documentary footage to a high-end fashion campaign aesthetic, a soft
+            pastel stop-motion look, hyperreal premium commercial lighting, or even surveillance-camera realism with
+            slight digital noise, and this layer is often what separates a usable output from a generic one.
+          </p>
 
           <h3>Adding Cinematic Control</h3>
-          <p>Once the basics are in place, the next layer is cinematic language.</p>
-          <h4>Camera Motion</h4>
-          <ul>
-            <li>slow dolly-in</li>
-            <li>tracking shot</li>
-            <li>handheld camera wobble</li>
-            <li>locked-off tripod shot</li>
-            <li>crane up</li>
-            <li>orbiting camera move</li>
-          </ul>
-          <h4>Framing</h4>
-          <ul>
-            <li>wide shot</li>
-            <li>medium shot</li>
-            <li>close-up</li>
-            <li>extreme close-up</li>
-            <li>over-the-shoulder</li>
-            <li>point of view</li>
-          </ul>
-          <h4>Camera Angle</h4>
-          <ul>
-            <li>low angle</li>
-            <li>high angle</li>
-            <li>eye-level</li>
-            <li>top-down view</li>
-            <li>dutch angle</li>
-          </ul>
-          <h4>Lighting and Mood</h4>
-          <ul>
-            <li>soft window light on an overcast day</li>
-            <li>harsh fluorescent supermarket lighting</li>
-            <li>warm late-afternoon golden light</li>
-            <li>cold moonlight with deep shadows</li>
-            <li>flickering neon reflections on polished concrete</li>
-          </ul>
+          <p>
+            Once the basics are in place, the next layer is cinematic language: you might direct camera motion with a
+            slow dolly-in, a tracking shot, handheld camera wobble, a locked-off tripod shot, a crane up, or an
+            orbiting camera move, then shape framing through wide shots, medium shots, close-ups, extreme close-ups,
+            over-the-shoulder compositions, and point-of-view perspectives; camera angle further influences tone,
+            whether you choose a low angle, high angle, eye-level view, top-down view, or dutch angle, while lighting
+            and mood complete the scene with choices like soft window light on an overcast day, harsh fluorescent
+            supermarket lighting, warm late-afternoon golden light, cold moonlight with deep shadows, or flickering
+            neon reflections on polished concrete.
+          </p>
 
           <h3>Prompt Example Breakdown</h3>
           <p>
