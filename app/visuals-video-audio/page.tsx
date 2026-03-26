@@ -9,10 +9,12 @@ export default function VisualsVideoAudioPage() {
           <p className="text-sm uppercase tracking-[0.2em] text-[#b8b2a7]">Faster iteration</p>
           <div className="mt-8 grid gap-8 lg:grid-cols-[0.45fr_0.55fr] lg:items-center">
             <p className="text-base leading-relaxed text-[#d2cbbd]">
-              We explore creative directions across visuals, video, and sound to quickly identify the strongest route
-              forward. Gen AI Expertise: Our expertise in generative AI ensures you are guided by specialists who
-              understand the latest visual and video generation models, helping bring your vision to life with the most
-              realistic, high-quality results.
+              One of my typical workflows, which I developed during the Google for Startups program, begins in Vertex
+              AI with an initial prompt that I refine in ChatGPT to sharpen the creative direction. I generate multiple
+              images to establish the visual style, then use them to create video sequences with stronger consistency
+              across shots. I assemble and edit the sequences in DaVinci Resolve or Premiere Pro, and use ElevenLabs
+              for voiceover, sound effects, and music. It is a workflow that combines structured visual development
+              with expressive audio storytelling.
             </p>
 
             <div className="mx-auto w-[68%] overflow-hidden rounded-2xl border border-white/15 bg-black/40 md:w-[72%] lg:w-full">
