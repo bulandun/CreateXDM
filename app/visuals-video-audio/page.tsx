@@ -4,7 +4,7 @@ import { VideoWithPoster } from "@/components/video-with-poster";
 export default function VisualsVideoAudioPage() {
   return (
     <main className="mx-auto w-full max-w-[1500px] px-6 py-12 md:px-12">
-      <section className="overflow-hidden rounded-[2rem] border border-white/15 bg-black">
+      <section className="panel-gradient overflow-hidden rounded-[2rem] border border-white/15">
         <div className="p-8 md:p-12">
           <p className="text-sm uppercase tracking-[0.2em] text-[#b8b2a7]">Faster iteration</p>
           <div className="mt-8 grid gap-8 lg:grid-cols-[0.45fr_0.55fr] lg:items-center">
