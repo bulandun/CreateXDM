@@ -118,7 +118,7 @@ export default function HomePage() {
             <div>
               <p className="text-xs uppercase tracking-[0.28em] text-[#b8b2a7]">Services</p>
               <h2 className="mt-6 font-serif text-5xl leading-[0.95] text-[#f6f4ef] md:text-7xl">
-                What we do
+                What I do
               </h2>
             </div>
 
