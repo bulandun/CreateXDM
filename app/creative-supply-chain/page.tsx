@@ -73,7 +73,7 @@ export default function CreativeSupplyChainPage() {
             station, the model works with a dense internal blueprint of that train station: enough to preserve form,
             movement, and semantic meaning, but small enough to manipulate efficiently.
           </p>
-          <p>
+          <p className="mb-8">
             This compression is critical. It allows the model to spend its computational power on high-level visual
             reasoning rather than brute-force pixel prediction. In practice, this is one of the main reasons modern
             video generation is even feasible at usable quality.
@@ -112,7 +112,7 @@ export default function CreativeSupplyChainPage() {
           <h3>
             <strong>The Transformer: Understanding Time, Structure, and Continuity</strong>
           </h3>
-          <p>
+          <p className="mb-8">
             The denoising process is governed by a transformer, the same broad family of architecture that
             revolutionized language models. In video, transformers are particularly useful because they can model
             long-range relationships across both space and time.
@@ -135,11 +135,11 @@ export default function CreativeSupplyChainPage() {
           </p>
 
           <h2>The Art of Direction — Foundational Prompting</h2>
-          <p>
+          <p className="mb-8">
             If Veo is the production engine, the prompt is your combination of brief, shot list, and directorial
             instruction. Good prompting is less about describing an image and more about specifying a shot.
           </p>
-          <p>
+          <p className="mb-8">
             The strongest prompts tend to contain four core ingredients: subject, action, environment, and style.
           </p>
 
@@ -235,7 +235,7 @@ export default function CreativeSupplyChainPage() {
           <p>The solution is not one magic prompt. It is workflow discipline.</p>
 
           <h3>Character Consistency: Reducing Identity Drift</h3>
-          <p>
+          <p className="mb-8">
             Most models do not truly remember a character from one generation to the next. Unless you explicitly anchor
             identity, the model reinterprets the character every time.
           </p>
@@ -258,7 +258,7 @@ export default function CreativeSupplyChainPage() {
             </VideoWithPoster>
           </div>
           <h4>Solution 2: Use Image Anchors</h4>
-          <p>
+          <p className="mb-8">
             A stronger method is to first generate a high-quality still image of the character and then use that image
             as visual conditioning for video generation. This gives the model something concrete to match, rather than
             relying purely on text.
@@ -304,7 +304,7 @@ export default function CreativeSupplyChainPage() {
 
           <h4>Solution 4: Use Motivated Continuity</h4>
           <p>Design your prompts so one shot leads naturally into the next.</p>
-          <p>
+          <p className="mb-8">
             <strong>Shot 1 ends with:</strong> Lina freezes and looks toward a flickering containment chamber off-frame.
             <br />
             <strong>Shot 2 begins with:</strong> Over-the-shoulder medium shot of Lina facing the flickering
@@ -379,7 +379,7 @@ export default function CreativeSupplyChainPage() {
             </li>
           </ol>
 
-          <h2>The Future is Direction</h2>
+          <h2 className="mt-10">The Future is Direction</h2>
           <p>
             What tools like Veo are really changing is not only production speed, but the shape of creative labour. The
             core challenge is no longer whether pixels can be generated. It is whether a creator can specify, guide,
