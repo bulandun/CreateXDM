@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { VideoWithPoster } from "@/components/video-with-poster";
 
 export const metadata: Metadata = {
@@ -390,6 +391,12 @@ export default function CreativeSupplyChainPage() {
             not defined by typing a sentence and getting a miracle. It is defined by learning how to build consistency,
             visual logic, and intention into a machine that can now move.
           </p>
+          <Link
+            href="/"
+            className="mt-10 inline-flex w-fit border border-white/30 px-5 py-2 text-xs uppercase tracking-[0.2em] text-white transition hover:bg-white hover:text-black"
+          >
+            Back to home
+          </Link>
         </section>
       </article>
     </main>
