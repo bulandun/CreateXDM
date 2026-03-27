@@ -46,7 +46,9 @@ export default function CreativeSupplyChainPage() {
             are shaping the future of AI filmmaking.
           </p>
 
-          <h2>Deconstructing Veo — The Architecture of Motion</h2>
+          <h2>
+            <strong>Deconstructing Veo — The Architecture of Motion</strong>
+          </h2>
           <p>
             At a high level, Veo is a generative video model capable of producing high-definition video from text
             prompts, image references, or both. Its ability to create longer, more coherent clips with a growing grasp
@@ -77,7 +79,9 @@ export default function CreativeSupplyChainPage() {
             video generation is even feasible at usable quality.
           </p>
 
-          <h3>The Diffusion Process: From Noise to Video</h3>
+          <h3>
+            <strong>The Diffusion Process: From Noise to Video</strong>
+          </h3>
           <p>
             The generative mechanism inside Veo is diffusion. This works through two complementary stages.
           </p>
@@ -105,7 +109,9 @@ export default function CreativeSupplyChainPage() {
             </VideoWithPoster>
           </div>
 
-          <h3>The Transformer: Understanding Time, Structure, and Continuity</h3>
+          <h3>
+            <strong>The Transformer: Understanding Time, Structure, and Continuity</strong>
+          </h3>
           <p>
             The denoising process is governed by a transformer, the same broad family of architecture that
             revolutionized language models. In video, transformers are particularly useful because they can model
@@ -137,7 +143,9 @@ export default function CreativeSupplyChainPage() {
             The strongest prompts tend to contain four core ingredients: subject, action, environment, and style.
           </p>
 
-          <h3>The Essential Elements</h3>
+          <h3>
+            <strong>The Essential Elements</strong>
+          </h3>
           <h4>1. Subject</h4>
           <p>Who or what is at the centre of the shot?</p>
           <p>
@@ -169,7 +177,9 @@ export default function CreativeSupplyChainPage() {
           <p>This grounds the subject in a believable context.</p>
 
           <h4>4. Style</h4>
-          <p>How should the shot feel visually?</p>
+          <p>
+            <strong>How should the shot feel visually?</strong>
+          </p>
           <p>
             Style can range from cinematic 16mm documentary footage to a high-end fashion campaign aesthetic, a soft
             pastel stop-motion look, hyperreal premium commercial lighting, or even surveillance-camera realism with
@@ -209,7 +219,9 @@ export default function CreativeSupplyChainPage() {
             </VideoWithPoster>
           </div>
 
-          <h2>Advanced Techniques for Cinematic Consistency</h2>
+          <h2>
+            <strong>Advanced Techniques for Cinematic Consistency</strong>
+          </h2>
           <p>
             One of the biggest weaknesses in generative video is inconsistency. A character’s face changes between
             shots. A room shifts layout. An object disappears. For narrative or branded work, this breaks the illusion
