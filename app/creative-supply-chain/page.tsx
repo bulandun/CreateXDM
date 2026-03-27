@@ -155,6 +155,11 @@ export default function CreativeSupplyChainPage() {
             dusted with white clay.
           </p>
           <p>The more specific the subject, the less ambiguity the model has to resolve.</p>
+          <div className="my-8 overflow-hidden rounded-2xl border border-white/15 bg-black/40">
+            <VideoWithPoster className="h-full w-full object-cover" src="/videos/vid.8.mp4" controls preload="metadata" playsInline>
+              Your browser does not support the video tag.
+            </VideoWithPoster>
+          </div>
 
           <h4>2. Action</h4>
           <p>What is happening in the shot?</p>
