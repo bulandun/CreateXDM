@@ -38,7 +38,7 @@ export default function CreativeSupplyChainPage() {
             not only what Veo can do, but why it works the way it does. The more clearly we understand the system, the
             more effectively we can direct it.
           </p>
-          <p>
+          <p className="mb-8">
             This article takes a technical look at Google Veo. We will unpack the architecture behind the model,
             explore practical prompting strategies, and then move into more advanced workflows for solving one of the
             central challenges in AI video: consistency. Along the way, we will examine how to keep characters stable
