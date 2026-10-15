@@ -2,9 +2,14 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Creative XDM — AI-Native Creative Agency",
+  title: "Unblank the Canvas | Design Hackathon by DesignXDM",
   description:
-    "Creative XDM is an AI-native creative agency crafting cinematic video, visual campaigns, and creative technology for modern brands."
+    "Unblank the Canvas is a creative design hackathon by DesignXDM. Discover inspiring stories, develop original ideas and bring designs to life with your team.",
+  openGraph: {
+    title: "Unblank the Canvas — Design Hackathon",
+    description: "Hack the ordinary. Discover, decode, design and deploy with DesignXDM.",
+    type: "website"
+  }
 };
 
 export default function RootLayout({
