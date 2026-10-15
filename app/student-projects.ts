@@ -31,7 +31,7 @@ export const projects = [
     "title": "Ivy, Power & Creativity",
     "students": "Anna, Maya, Betsy",
     "story": "Emerald green represents nature, navy blue represents calmness and stability, and gold represents power and endurance.",
-    "hero": "project-04-design.png",
+    "hero": "04.png",
     "moodboard": "project-04-moodboard.png",
     "flat": null
   },
