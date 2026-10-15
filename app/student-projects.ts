@@ -22,7 +22,7 @@ export const projects = [
     "title": "Trust, Curiosity & Confidence",
     "students": "Tob, Alexander, Matilda",
     "story": "Teal, blue, textured patterns and themes of trust, determination, confidence and curiosity shape this design.",
-    "hero": "project-03-design.png",
+    "hero": "03.png",
     "moodboard": "project-03-moodboard.png",
     "flat": null
   },
