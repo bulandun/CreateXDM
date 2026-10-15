@@ -4,7 +4,7 @@ export const projects = [
     "title": "Growth & Friendship",
     "students": "Lovell, Lottie, Jasmine",
     "story": "Green stripes represent calmness and ivy growing around Wychwood School. Electric blue connects the shirt to the football academy.",
-    "hero": "project-01-design3d.webp",
+    "hero": "01.png",
     "moodboard": "project-01-moodboard.png",
     "flat": "project-01-design2d.png"
   },
@@ -13,7 +13,7 @@ export const projects = [
     "title": "Without Limits",
     "students": "Agustin, Jimmy, Isaac",
     "story": "Green and blue represent the school and academy, as well as growth, learning and calmness. The team also designed a new academy badge.",
-    "hero": "01.png",
+    "hero": "project-02-design3d.png",
     "moodboard": null,
     "flat": "project-02-design2d.png"
   },
