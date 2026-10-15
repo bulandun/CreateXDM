@@ -13,7 +13,7 @@ export const projects = [
     "title": "Without Limits",
     "students": "Agustin, Jimmy, Isaac",
     "story": "Green and blue represent the school and academy, as well as growth, learning and calmness. The team also designed a new academy badge.",
-    "hero": "project-02-design3d.png",
+    "hero": "01.png",
     "moodboard": null,
     "flat": "project-02-design2d.png"
   },
