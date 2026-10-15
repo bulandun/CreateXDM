@@ -5,12 +5,11 @@ import { projects } from "../app/student-projects";
 
 function OriginalArtwork({ filename, label, project }: { filename: string | null; label: string; project: string }) {
   const [failed, setFailed] = useState(false);
-  if (!filename) return null;
   return (
     <div className="min-w-0">
       <p className="mb-3 font-mono text-[11px] uppercase tracking-[0.18em] text-[#a8ff43]">{label}</p>
-      <div className="relative flex min-h-44 items-center justify-center overflow-hidden border border-white/15 bg-[#171b17]">
-        {failed ? (
+      <div className="relative flex aspect-video w-full items-center justify-center overflow-hidden border border-white/15 bg-[#171b17]">
+        {!filename || failed ? (
           <div className="px-6 py-12 text-center font-mono text-xs leading-loose text-[#aab3a7]">
             <span className="block text-[#a8ff43]">ORIGINAL ARTWORK</span>
             <span>Image awaiting upload from the student presentation.</span>
@@ -21,7 +20,7 @@ function OriginalArtwork({ filename, label, project }: { filename: string | null
           <img
             src={`/hackathon/${filename}`}
             alt={`${project} — ${label.toLowerCase()} created by students`}
-            className="h-auto max-h-[530px] w-full object-contain"
+            className="absolute inset-0 h-full w-full object-contain"
             loading="lazy"
             onError={() => setFailed(true)}
           />
@@ -50,12 +49,12 @@ export default function StudentGallery() {
       </div>
       <div className="grid gap-px border border-white/20 bg-white/20 md:grid-cols-2 lg:grid-cols-3">
         {projects.map((p, i) => (
-          <button type="button" key={p.id} onClick={() => setSelected(i)} className="group bg-[#0e110e] p-6 text-left transition hover:bg-[#182119]">
+          <button type="button" key={p.id} onClick={() => setSelected(i)} className="group flex h-full min-w-0 flex-col bg-[#0e110e] p-6 text-left transition hover:bg-[#182119]">
             <span className="font-mono text-[11px] text-[#a8ff43]">PROJECT_{String(p.id).padStart(2, "0")} ↗</span>
-            <div className="pointer-events-none mt-5 grid gap-4"><OriginalArtwork filename={p.moodboard} label="Moodcanvas" project={p.title}/><OriginalArtwork filename={p.hero} label="Shirt Design" project={p.title}/></div>
-            <h3 className="mt-6 text-2xl font-black uppercase tracking-tight">{p.title}</h3>
+            <div className="pointer-events-none mt-5 grid w-full gap-4"><OriginalArtwork filename={p.moodboard} label="Moodcanvas" project={p.title}/><OriginalArtwork filename={p.hero} label="Shirt Design" project={p.title}/></div>
+            <h3 className="mt-6 min-h-[3.5rem] text-2xl font-black uppercase tracking-tight">{p.title}</h3>
             <p className="mt-3 text-sm text-[#bfcbbd]">{p.students}</p>
-            <p className="mt-4 font-mono text-xs text-[#a8ff43]">OPEN PROJECT →</p>
+            <p className="mt-auto pt-4 font-mono text-xs text-[#a8ff43]">OPEN PROJECT →</p>
           </button>
         ))}
       </div>
