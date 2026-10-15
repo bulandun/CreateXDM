@@ -51,8 +51,7 @@ export default function StudentGallery() {
         {projects.map((p, i) => (
           <button type="button" key={p.id} onClick={() => setSelected(i)} className="group flex h-full min-w-0 flex-col bg-[#0e110e] p-6 text-left transition hover:bg-[#182119]">
             <span className="font-mono text-[11px] text-[#a8ff43]">PROJECT_{String(p.id).padStart(2, "0")} ↗</span>
-            <div className="pointer-events-none mt-5 grid w-full gap-4"><OriginalArtwork filename={p.moodboard} label="Moodcanvas" project={p.title}/><OriginalArtwork filename={p.hero} label="Shirt Design" project={p.title}/></div>
-            <h3 className="mt-6 min-h-[3.5rem] text-2xl font-black uppercase tracking-tight">{p.title}</h3>
+            <h3 className="mt-5 min-h-[3.5rem] text-2xl font-black uppercase tracking-tight">{p.title}</h3>
             <p className="mt-3 text-sm text-[#bfcbbd]">{p.students}</p>
             <p className="mt-auto pt-4 font-mono text-xs text-[#a8ff43]">OPEN PROJECT →</p>
           </button>
