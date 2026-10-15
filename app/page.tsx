@@ -1,244 +1,75 @@
-import { Reveal } from "@/components/reveal";
-import { VideoWithPoster } from "@/components/video-with-poster";
 import Link from "next/link";
 
-const services = [
-  {
-    title: "Visuals & Video",
-    text: "Standout brand visuals, campaign imagery, films, social content, launch videos, explainers, key art, and creative assets that give ideas clear, compelling form and bring stories to life across platforms.",
-    index: "01"
-  },
-  {
-    title: "Creative Systems",
-    text: "Scalable workflows, content pipelines, and creative systems that bring more speed, consistency, and control to modern brand production.",
-    index: "02"
-  },
-  {
-    title: "Creative Tech Tools",
-    text: "Bespoke tools built for creative teams, designed to improve workflows, unlock new possibilities, and turn creative capability into a competitive advantage.",
-    index: "03"
-  }
-];
-
-const featuredWork = [
-  {
-    title: "Images + video + audio",
-    type: "Rapid prototyping",
-    stat: "FASTER ITERATION",
-    summary:
-      "I explore creative directions across visuals, video, and sound to quickly identify the strongest route forward. Gen AI Expertise: Our expertise in generative AI ensures you are guided by specialists who understand the latest visual and video generation models, helping bring your vision to life with the most realistic, high-quality results.",
-    tone: "from-[#d9d4cd] via-[#6d685f] to-[#101010]",
-    mediaSrc: "/images/images-video-audio-eye.svg",
-    mediaAlt: "Macro iris close-up",
-    href: "/visuals-video-audio"
-  },
-  {
-    title: "CREATIVE SUPPLY CHAIN",
-    type: "Multimodal input",
-    stat: "Build Your Creative Supply Chain",
-    summary:
-      "I help guide your team in building a creative supply chain that gives you complete control over your creative AI production, creating clearer workflows, stronger consistency, faster turnaround times, and better visibility across every stage of the process.",
-    tone: "from-[#8f8a7f] via-[#1e1d1b] to-[#090909]",
-    mediaSrc: "/images/words-references-collage.svg",
-    mediaAlt: "Collage of reference moments connected by arrows",
-    href: "/creative-supply-chain"
-  },
-  {
-    title: "CREATIVE TECH TOOLS",
-    type: "Execution-ready systems",
-    stat: "Creative Tools Built Around Your Business",
-    summary:
-      "I build custom creative tech tools tailored to your business requirements, creating solutions that streamline workflows, improve efficiency, and give your team more control over how creative work is produced.",
-    tone: "from-[#606878] via-[#272b33] to-[#0a0a0a]",
-    mediaSrc: "/images/production-ready-output.svg",
-    mediaAlt: "UNBLANK THE CANVAS collage artwork",
-    href: "https://www.designxdm.com"
-  }
-];
-
-const process = [
-  ["Imagine", "I define the vision, audience, tone, references, and creative opportunity."],
-  ["Prototype", "I rapidly explore directions across words, images, video, audio, and references to find the strongest route forward."],
-  ["Refine", "I edit, align, and sharpen the work so the output matches the brand, the brief, and the intended creative direction."],
-  ["Produce", "I turn the approved direction into production-ready visuals, video, and campaign assets."],
-  ["Scale", "Where needed, I build creative systems that make future production faster, smarter, and more consistent."]
+const stages = [
+  { id: "01", label: "DISCOVER", command: "find --inspiration", description: "Explore incredible visuals and real stories from science, nature, culture and archives using DesignXDM." },
+  { id: "02", label: "DECODE", command: "build --concept", description: "Connect ideas, challenge the obvious and create a design with a story worth telling." },
+  { id: "03", label: "DESIGN", command: "make --original", description: "Bring your idea to life with creative tools, including our Adobe Express football shirt designer." },
+  { id: "04", label: "DEPLOY", command: "share --your-story", description: "Pitch your creation, explain your choices and celebrate the originality of every team." }
 ];
 
 export default function HomePage() {
   return (
-    <main className="relative overflow-x-clip pb-24">
-      <div className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(circle_at_12%_8%,rgba(242,228,206,0.16),transparent_34%),radial-gradient(circle_at_22%_18%,rgba(189,124,76,0.18),transparent_38%),radial-gradient(circle_at_85%_15%,rgba(255,255,255,0.08),transparent_35%),linear-gradient(180deg,#111111_0%,#0a0a0a_45%,#090909_100%)]" />
+    <main className="min-h-screen bg-[#080909] text-[#f3f4ee] selection:bg-[#a8ff43] selection:text-black">
+      <div className="pointer-events-none fixed inset-0 z-50 opacity-[0.045]" style={{backgroundImage: "linear-gradient(transparent 50%, #000 50%)", backgroundSize: "100% 4px"}} aria-hidden="true" />
+      <header className="relative z-20 mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-4 border-b border-white/20 px-6 py-6 md:px-10">
+        <Link href="/" className="font-mono text-lg font-black tracking-tighter">DESIGN<span className="text-[#a8ff43]">_</span>XDM <span className="text-[#9eaaa2]">/ LAB</span></Link>
+        <nav aria-label="Main navigation" className="flex flex-wrap items-center gap-4 font-mono text-[11px] font-bold uppercase tracking-wide sm:gap-7">
+          <a href="#mission" className="hover:text-[#a8ff43]">[01] Mission</a>
+          <a href="#process" className="hover:text-[#a8ff43]">[02] Process</a>
+          <a href="#get-involved" className="border border-[#a8ff43] px-4 py-2 text-[#a8ff43] transition hover:bg-[#a8ff43] hover:text-black">[03] Get involved ↗</a>
+        </nav>
+      </header>
 
-      <section className="mx-auto w-full max-w-[1500px] px-6 pb-14 pt-10 md:px-12 lg:pt-14">
-        <Reveal>
-          <div className="relative min-h-[70vh] overflow-hidden rounded-[2rem] border border-white/15 bg-[#111111] p-8 md:p-12">
-  <VideoWithPoster
-    className="absolute inset-0 h-full w-full object-cover"
-    src="/videos/showreel.mp4"
-    autoPlay
-    muted
-    loop
-    playsInline
-  />
-  <div className="absolute inset-0 bg-black/45" />
-  <div className="absolute inset-0 bg-[linear-gradient(120deg,rgba(255,255,255,0.08),transparent_35%),linear-gradient(320deg,rgba(244,76,43,0.14),transparent_45%)]" />
-  <div className="absolute -left-24 top-10 h-52 w-52 rounded-full bg-[#f44c2b]/40 blur-[120px]" />
-        
-            <div className="absolute right-[9%] top-[14%] h-72 w-72 rounded-full bg-[radial-gradient(circle_at_30%_30%,rgba(247,235,221,0.58),rgba(255,116,46,0.34)_40%,rgba(120,74,52,0.14)_68%,rgba(12,18,24,0)_100%)] opacity-45 blur-[20px]" />
-            <div className="relative inline-flex max-w-fit flex-wrap items-center gap-4 rounded-md bg-black/30 px-4 py-3">
-              <p className="text-xs uppercase tracking-[0.2em] text-[#d7d1c6] md:text-sm">
-                Portfolio of Brendan Donnelly - Redefining the future of the creative studio
-              </p>
-            </div>
-
-            <h1 className="relative mt-8 max-w-4xl font-serif text-[clamp(3.2rem,11vw,9.5rem)] leading-[0.9] tracking-tight text-[#f6f4ef]">
-              I turn your vision into creative reality
-            </h1>
-
-            <p className="relative mt-8 max-w-xl text-base leading-relaxed text-[#d7d1c6] md:text-lg">
-              I am an expert in generative AI creative technology, creating visuals and video, designing smarter creative supply chains, and developing new creative tech solutions.
-            </p>
-
-            <div className="relative mt-12 flex flex-wrap items-center gap-4">
-              <Link
-                href="/creative-supply-chain"
-                className="rounded-full border border-white/45 px-8 py-3 text-xs font-semibold uppercase tracking-[0.2em] text-white transition hover:bg-white/10"
-              >
-                See how I work
-              </Link>
-            </div>
-          </div>
-        </Reveal>
-
+      <section className="relative isolate mx-auto flex min-h-[760px] max-w-7xl flex-col justify-center overflow-hidden px-6 py-24 md:px-10" aria-labelledby="hero-title">
+        <div className="pointer-events-none absolute inset-0 -z-10 opacity-25" style={{backgroundImage: "linear-gradient(to right, #7e9288 1px, transparent 1px),linear-gradient(to bottom, #7e9288 1px, transparent 1px)", backgroundSize: "48px 48px", maskImage:"linear-gradient(to bottom,black,transparent)"}} aria-hidden="true" />
+        <div className="pointer-events-none absolute -right-32 top-16 -z-10 h-[480px] w-[480px] rounded-full bg-[#b6ff4a]/10 blur-[100px]" aria-hidden="true" />
+        <div className="mb-10 flex flex-wrap items-center gap-4 font-mono text-xs uppercase tracking-[0.16em] text-[#a8ff43]"><span className="inline-block h-2 w-2 animate-pulse rounded-full bg-[#a8ff43]" />SYSTEM ONLINE <span className="text-[#a5aaa6]">// OXFORD DESIGN HACKATHON</span></div>
+        <h1 id="hero-title" className="max-w-6xl text-[clamp(3.7rem,11.7vw,10.7rem)] font-black uppercase leading-[0.84] tracking-[-0.085em]">UNBLANK<br />THE <span className="relative text-[#a8ff43]">CANVAS<span className="text-white">.</span></span></h1>
+        <div className="mt-12 grid gap-10 border-t border-white/25 pt-8 md:grid-cols-[1fr_auto] md:items-end">
+          <div><p className="font-mono text-xs uppercase tracking-[0.18em] text-[#a8ff43]">Creative thinking // activated</p><p className="mt-5 max-w-2xl text-xl leading-snug text-[#e0e3d9] md:text-2xl">Not another design competition. A creative hackathon where young minds discover extraordinary stories, break predictable patterns and turn original ideas into real designs.</p></div>
+          <a href="#get-involved" className="inline-flex w-fit items-center justify-center bg-[#a8ff43] px-8 py-5 font-mono text-sm font-black uppercase text-[#080909] transition hover:bg-white">JOIN THE MISSION ↗</a>
+        </div>
+        <div className="mt-14 flex flex-wrap gap-x-8 gap-y-3 font-mono text-[11px] uppercase tracking-[0.1em] text-[#a9b0a9]"><span>LOCATION: OXFORD / UK</span><span>FORMAT: TEAM HACKATHON</span><span>POWERED BY: DESIGNXDM</span></div>
       </section>
 
-      <section className="mx-auto w-full max-w-[1500px] px-6 md:px-12">
-        <Reveal>
-          <div className="grid gap-8 border-y border-white/15 py-16 lg:grid-cols-[0.9fr_1.1fr]">
-            <div>
-              <p className="text-xs uppercase tracking-[0.28em] text-[#b8b2a7]">Services</p>
-              <h2 className="mt-6 font-serif text-5xl leading-[0.95] text-[#f6f4ef] md:text-7xl">
-                What I do
-              </h2>
-            </div>
-
-            <div className="space-y-4">
-              {services.map((service, idx) => (
-                <Reveal key={service.title} delay={idx * 0.06}>
-                  <article className="group grid items-start gap-5 border border-white/15 bg-white/[0.03] p-5 transition hover:-translate-y-1 hover:bg-white/[0.05] md:grid-cols-[90px_1fr]">
-                    <p className="text-sm uppercase tracking-[0.18em] text-[#b8b2a7]">{service.index}</p>
-                    <div>
-                      <h3 className="text-2xl text-[#f6f4ef] transition group-hover:tracking-wide">{service.title}</h3>
-                      <p className="mt-2 text-sm leading-relaxed text-[#d2cbbd]">{service.text}</p>
-                    </div>
-                  </article>
-                </Reveal>
-              ))}
-            </div>
-          </div>
-        </Reveal>
+      <section id="mission" className="border-y border-white/15 bg-[#121612]">
+        <div className="mx-auto grid max-w-7xl gap-12 px-6 py-24 md:grid-cols-[0.45fr_0.55fr] md:px-10">
+          <div><p className="font-mono text-xs font-bold tracking-[0.2em] text-[#a8ff43]">[01] / THE MISSION</p><h2 className="mt-6 text-5xl font-black uppercase leading-[0.94] tracking-tighter md:text-7xl">HACK<br />THE<br /><span className="text-[#a8ff43]">ORDINARY.</span></h2></div>
+          <div className="flex flex-col justify-center"><p className="text-2xl font-semibold leading-snug md:text-3xl">Great design begins long before you open a design tool.</p><p className="mt-7 text-lg leading-relaxed text-[#bac5b9]">Unblank the Canvas gives students space to think differently. Using DesignXDM, they uncover unusual visual references, explore their meaning and develop ideas rooted in curiosity, creativity and human stories.</p><p className="mt-5 text-lg leading-relaxed text-[#bac5b9]">Teams then turn those ideas into something tangible, learning to collaborate, experiment and explain not just what they made — but why.</p></div>
+        </div>
       </section>
 
-      <section className="mx-auto w-full max-w-[1600px] px-6 py-20 md:px-12">
-        <Reveal>
-          <div className="mb-10 flex items-end justify-between gap-6">
-            <div>
-              <p className="text-xs uppercase tracking-[0.28em] text-[#b8b2a7]">Process</p>
-              <h2 className="mt-5 max-w-4xl font-serif text-5xl leading-[0.95] text-[#f6f4ef] md:text-7xl">
-                Taste Not Template
-              </h2>
-            </div>
-          </div>
-        </Reveal>
-
-        <div className="space-y-8">
-          {featuredWork.map((project, idx) => (
-            <Reveal key={project.title} delay={idx * 0.08}>
-              <article className="group grid overflow-hidden rounded-[2rem] border border-white/15 bg-black lg:grid-cols-[1.1fr_0.9fr]">
-                <div className={`relative min-h-[22rem] bg-gradient-to-br ${project.tone} p-8 md:min-h-[30rem] md:p-12`}>
-                  {project.mediaSrc ? (
-                    <>
-                      <img
-                        src={project.mediaSrc}
-                        alt={project.mediaAlt ?? project.title}
-                        className="absolute inset-0 h-full w-full object-cover"
-                      />
-                      <div className="absolute inset-0 bg-black/35" />
-                    </>
-                  ) : null}
-                  <p className="text-xs uppercase tracking-[0.26em] text-white/70">{project.type}</p>
-                  <h3 className="relative mt-4 max-w-xl font-serif text-4xl uppercase leading-[0.9] text-[#f7f5ef] md:text-6xl">
-                    {project.title}
-                  </h3>
-                </div>
-
-                <div className="flex flex-col justify-between p-8 md:p-12">
-                  <p className="text-sm uppercase tracking-[0.2em] text-[#b8b2a7]">{project.stat}</p>
-                  <p className="mt-8 max-w-md text-base leading-relaxed text-[#d2cbbd]">{project.summary}</p>
-                  {project.href ? (
-                    <Link
-                      href={project.href}
-                      className="mt-6 w-fit bg-[#f6f4ef] px-5 py-2 text-xs uppercase tracking-[0.2em] text-black transition hover:-translate-y-0.5 hover:bg-white"
-                    >
-                      View Work
-                    </Link>
-                  ) : (
-                    <button className="mt-6 w-fit bg-[#f6f4ef] px-5 py-2 text-xs uppercase tracking-[0.2em] text-black transition hover:-translate-y-0.5 hover:bg-white">
-                      View Work
-                    </button>
-                  )}
-                </div>
-              </article>
-            </Reveal>
+      <section id="process" className="mx-auto max-w-7xl px-6 py-24 md:px-10">
+        <p className="font-mono text-xs font-bold tracking-[0.2em] text-[#a8ff43]">[02] / THE CREATIVE PROTOCOL</p>
+        <h2 className="mt-5 max-w-4xl text-5xl font-black uppercase leading-[0.95] tracking-tighter md:text-7xl">FOUR STAGES.<br />ZERO BLANK CANVASES.</h2>
+        <div className="mt-14 grid gap-px border border-white/20 bg-white/20 md:grid-cols-2">
+          {stages.map((stage) => (
+            <article key={stage.id} className="bg-[#0e100e] p-8 transition hover:bg-[#182017] md:p-10">
+              <div className="flex items-start justify-between font-mono text-xs text-[#a8ff43]"><span>STEP_{stage.id}</span><span aria-hidden="true">↗</span></div>
+              <h3 className="mt-12 text-4xl font-black tracking-tight md:text-5xl">{stage.label}</h3>
+              <p className="mt-4 font-mono text-sm text-[#a8ff43]">&gt; {stage.command}</p>
+              <p className="mt-6 max-w-md text-base leading-relaxed text-[#bbc4ba]">{stage.description}</p>
+            </article>
           ))}
         </div>
       </section>
 
-      <section className="mx-auto grid w-full max-w-[1500px] gap-10 px-6 py-8 md:px-12 lg:grid-cols-[1.1fr_0.9fr]">
-        <Reveal>
-          <div className="border border-white/15 bg-[#121110] p-8 md:p-10">
-            <p className="text-xs uppercase tracking-[0.28em] text-[#b8b2a7]">About</p>
-            <h2 className="mt-6 font-serif text-4xl leading-tight text-[#f6f4ef] md:text-6xl">
-              Creative built for the pace of now
-            </h2>
-            <p className="mt-6 max-w-2xl text-base leading-relaxed text-[#d2cbbd]">
-              My skills blends creative direction, AI-native workflows, and production thinking to help brands move from idea to execution without the usual bottlenecks. I create visuals, video, and scalable creative systems designed to be original, effective, and ready for real-world use.
-            </p>
-          </div>
-        </Reveal>
-
-        <Reveal delay={0.1}>
-          <div className="relative overflow-hidden border border-white/15 p-8 md:p-10">
-            <div className="absolute inset-0 bg-[linear-gradient(160deg,rgba(255,255,255,0.06),transparent_40%),radial-gradient(circle_at_90%_10%,rgba(244,76,43,0.16),transparent_38%)]" />
-            <h3 className="relative text-xs uppercase tracking-[0.26em] text-[#b8b2a7]">How we work</h3>
-            <p className="relative mt-4 text-sm leading-relaxed text-[#d2cbbd]">
-              Our multimodal process is built to move quickly from vision to output while keeping quality, originality, and control intact.
-            </p>
-            <div className="relative mt-5 space-y-5">
-              {process.map(([title, text], idx) => (
-                <div key={title} className="border-b border-white/15 pb-4 last:border-none">
-                  <p className="text-xs uppercase tracking-[0.2em] text-[#f6f4ef]">0{idx + 1} / {title}</p>
-                  <p className="mt-2 text-sm leading-relaxed text-[#d2cbbd]">{text}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </Reveal>
+      <section className="border-y border-white/20 bg-[#a8ff43] text-[#101510]">
+        <div className="mx-auto grid max-w-7xl gap-10 px-6 py-20 md:grid-cols-[1fr_1fr] md:items-center md:px-10">
+          <div><p className="font-mono text-xs font-bold tracking-[0.2em]">FIELD REPORT / OXFORD 2026</p><h2 className="mt-5 text-5xl font-black uppercase leading-[0.94] tracking-tighter md:text-7xl">FROM IDEAS<br />TO REALITY.</h2></div>
+          <div><p className="text-xl font-semibold leading-relaxed">At Wychwood School in Oxford, student teams explored visual inspiration, designed original football shirts and presented the stories behind their work.</p><p className="mt-5 text-lg leading-relaxed">The winning design is set to become a real football shirt — showing students how creative thinking can move beyond the screen.</p><p className="mt-7 font-mono text-xs uppercase tracking-wider">DESIGNXDM × ADOBE EXPRESS / SCHOOL DESIGN HACKATHON</p></div>
+        </div>
       </section>
 
-      <section className="mx-auto w-full max-w-[1500px] px-6 pt-14 md:px-12">
-        <Reveal>
-          <div className="relative overflow-hidden rounded-[2rem] border border-white/20 bg-[#151311] p-8 md:p-14">
-            <div className="absolute -right-28 top-8 h-72 w-72 rounded-full bg-[#f44c2b]/35 blur-[120px]" />
-            <h2 className="relative max-w-4xl font-serif text-[0.675rem] leading-[0.95] text-[#f6f4ef] md:text-[1.05rem]">
-              Contact me at{" "}
-              <a className="underline decoration-[#f44c2b] underline-offset-4" href="mailto:donnelly_brendan@yahoo.com">
-                donnelly_brendan@yahoo.com
-              </a>
-            </h2>
-          </div>
-        </Reveal>
+      <section id="get-involved" className="relative mx-auto max-w-7xl px-6 py-24 md:px-10">
+        <div className="border border-[#a8ff43]/60 bg-[#111811] p-8 md:p-16">
+          <p className="font-mono text-xs font-bold tracking-[0.2em] text-[#a8ff43]">[03] / YOUR TURN</p>
+          <h2 className="mt-6 max-w-4xl text-5xl font-black uppercase leading-[0.95] tracking-tighter md:text-7xl">BRING THE HACKATHON<br /><span className="text-[#a8ff43]">TO YOUR SCHOOL.</span></h2>
+          <p className="mt-8 max-w-2xl text-lg leading-relaxed text-[#c3cfc1]">We welcome conversations with schools, educators, creative professionals and organisations interested in helping the next generation of designers think bigger.</p>
+          <div className="mt-10 flex flex-wrap gap-4"><a href="https://www.designxdm.com" target="_blank" rel="noopener noreferrer" className="inline-flex items-center bg-[#a8ff43] px-7 py-4 font-mono text-sm font-bold text-black hover:bg-white">EXPLORE DESIGNXDM ↗</a><a href="https://www.linkedin.com/company/designxdm/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center border border-white/40 px-7 py-4 font-mono text-sm font-bold text-white hover:border-[#a8ff43] hover:text-[#a8ff43]">CONNECT WITH US ↗</a></div>
+        </div>
       </section>
+      <footer className="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-4 border-t border-white/15 px-6 py-8 font-mono text-xs uppercase tracking-widest text-[#9ba69b] md:px-10"><span>UNBLANK THE CANVAS // BY DESIGNXDM</span><span>HUMAN CREATIVITY FIRST.</span></footer>
     </main>
   );
 }
