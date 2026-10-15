@@ -72,9 +72,8 @@ export default function StudentGallery() {
             </div>
             <p className="my-9 max-w-3xl border-l-2 border-[#a8ff43] pl-5 text-lg leading-relaxed text-[#d2dacd]">{active.story}</p>
             <div className="grid gap-7 md:grid-cols-2">
-              <OriginalArtwork filename={active.hero} label="Final shirt design" project={active.title}/>
-              <OriginalArtwork filename={active.moodboard} label="Original moodboard" project={active.title}/>
-              <OriginalArtwork filename={active.flat} label="Original 2D design" project={active.title}/>
+              <OriginalArtwork filename={active.moodboard} label="Moodcanvas" project={active.title}/>
+              <OriginalArtwork filename={active.hero} label="Shirt Design" project={active.title}/>
             </div>
             <div className="mt-8 flex gap-4 border-t border-white/20 pt-6 font-mono text-xs">
               <button type="button" onClick={() => setSelected((selected! + projects.length - 1) % projects.length)} className="border border-white/30 px-5 py-3 hover:border-[#a8ff43]">← PREV</button>
