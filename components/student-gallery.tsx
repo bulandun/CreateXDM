@@ -37,9 +37,16 @@ export default function StudentGallery() {
   return (
     <section id="student-work" className="mx-auto max-w-7xl px-6 py-24 md:px-10">
       <div className="mb-12">
-        <p className="font-mono text-xs font-bold tracking-[0.2em] text-[#a8ff43]">[04] / STUDENT WORK // WYCHWOOD 2026</p>
-        <h2 className="mt-5 text-5xl font-black uppercase leading-[0.96] tracking-tighter md:text-7xl">THE CREATIVE<br /><span className="text-[#a8ff43]">ARCHIVE.</span></h2>
-        <p className="mt-6 max-w-3xl text-lg leading-relaxed text-[#b8c5b8]">Eleven teams. Eleven original creative directions. Explore each design, its inspiration, and the students who made it.</p>
+        <p className="font-mono text-xs font-bold tracking-[0.2em] text-[#a8ff43]">[04] / WYCHWOOD SCHOOL, OXFORD / 2026</p>
+        <h2 className="mt-5 text-5xl font-black uppercase leading-[0.96] tracking-tighter md:text-7xl">DESIGN HACKATHON <span className="text-[#a8ff43]">01</span></h2>
+        <h3 className="mt-9 text-2xl font-black uppercase tracking-tight md:text-4xl">35 STUDENTS. 11 TEAMS. 1 CHALLENGE.</h3>
+        <div className="mt-6 max-w-4xl space-y-5 text-lg leading-relaxed text-[#c5d0c4]">
+          <p>Students from <strong className="text-white">Wychwood School, Oxford</strong>, were challenged to design a football shirt for the <strong className="text-white">Josh McEachran Football Academy</strong>, founded by the former Chelsea and Oxford United footballer. Their designs were to reflect the values of both the school and the academy.</p>
+          <p>Using <strong className="text-white">DesignXDM</strong>, students researched inspiring imagery, explored visual stories and developed their design vocabulary before bringing their ideas to life with the <strong className="text-white">Adobe Express football shirt designer add-on</strong>.</p>
+          <p>Representatives from <strong className="text-white">Adobe</strong> joined the hackathon to offer professional advice and feedback as students presented their designs and explained the stories behind them.</p>
+          <p className="border-l-2 border-[#a8ff43] pl-5 font-bold text-white">The winning design will become a real football shirt.</p>
+        </div>
+        <p className="mt-12 font-mono text-xs uppercase tracking-[0.18em] text-[#a8ff43]">// EXPLORE THE STUDENT DESIGNS ↓</p>
       </div>
       <div className="grid gap-px border border-white/20 bg-white/20 md:grid-cols-2 lg:grid-cols-3">
         {projects.map((p, i) => (
