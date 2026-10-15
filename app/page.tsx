@@ -1,3 +1,4 @@
+import StudentGallery from "@/components/student-gallery";
 import Link from "next/link";
 
 const stages = [
@@ -16,7 +17,7 @@ export default function HomePage() {
         <nav aria-label="Main navigation" className="flex flex-wrap items-center gap-4 font-mono text-[11px] font-bold uppercase tracking-wide sm:gap-7">
           <a href="#mission" className="hover:text-[#a8ff43]">[01] Mission</a>
           <a href="#process" className="hover:text-[#a8ff43]">[02] Process</a>
-          <a href="#get-involved" className="border border-[#a8ff43] px-4 py-2 text-[#a8ff43] transition hover:bg-[#a8ff43] hover:text-black">[03] Get involved ↗</a>
+          <a href="#student-work" className="border border-[#a8ff43] px-4 py-2 text-[#a8ff43] transition hover:bg-[#a8ff43] hover:text-black">[04] Student work ↗</a>
         </nav>
       </header>
 
@@ -60,6 +61,8 @@ export default function HomePage() {
           <div><p className="text-xl font-semibold leading-relaxed">At Wychwood School in Oxford, student teams explored visual inspiration, designed original football shirts and presented the stories behind their work.</p><p className="mt-5 text-lg leading-relaxed">The winning design is set to become a real football shirt — showing students how creative thinking can move beyond the screen.</p><p className="mt-7 font-mono text-xs uppercase tracking-wider">DESIGNXDM × ADOBE EXPRESS / SCHOOL DESIGN HACKATHON</p></div>
         </div>
       </section>
+
+      <StudentGallery />
 
       <section id="get-involved" className="relative mx-auto max-w-7xl px-6 py-24 md:px-10">
         <div className="border border-[#a8ff43]/60 bg-[#111811] p-8 md:p-16">
