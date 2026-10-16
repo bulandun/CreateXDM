@@ -213,3 +213,17 @@
     scrollbar-gutter: auto;
   }
 }
+
+/* Keep mobile project scrolling on the compositor without background effects. */
+body:has(.project-modal-scroll) .matrix-glitch-text::before,
+body:has(.project-modal-scroll) .matrix-glitch-text::after,
+body:has(.project-modal-scroll) .matrix-hero::after {
+  animation-play-state: paused !important;
+}
+@media (max-width: 767px) {
+  .project-modal-scroll {
+    touch-action: auto;
+    -webkit-overflow-scrolling: touch;
+    background-color: #080909;
+  }
+}
