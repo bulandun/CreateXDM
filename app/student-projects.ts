@@ -58,7 +58,7 @@ export const projects = [
     "title": "Growth & Focus",
     "students": "Mylo, Inga, Luke",
     "story": "Blue represents calmness and focus, while ivy connects Wychwood School and the academy through growth and learning.",
-    "hero": "project-07-design3d.png",
+    "hero": "07.png",
     "moodboard": "project-07-moodboard.png",
     "flat": "project-07-design2d.png"
   },
@@ -67,7 +67,7 @@ export const projects = [
     "title": "Creativity, Nature & Heritage",
     "students": "Millie, Emily, Florence",
     "story": "Green and pink stand for creativity, nature and heritage. The ivy suggests growth, community and perseverance.",
-    "hero": "project-08-design2d.png",
+    "hero": "08.png",
     "moodboard": "project-08-moodboard.png",
     "flat": null
   },
@@ -76,7 +76,7 @@ export const projects = [
     "title": "Nature & Communication",
     "students": "Sen, Georgina, Manuela",
     "story": "Leaves express nature and ecology, turquoise represents calmness and communication, and ivy represents growth.",
-    "hero": "project-09-design3d.png",
+    "hero": "09.png",
     "moodboard": "project-09-moodboard.png",
     "flat": "project-09-design2d.png"
   },
@@ -85,7 +85,7 @@ export const projects = [
     "title": "Nature Patterns & Heritage",
     "students": "Xavi, Kai, Claire",
     "story": "A design combining floral elements, foliage and green tones with a botanical pattern language.",
-    "hero": "project-10-design3d.png",
+    "hero": "10.png",
     "moodboard": "project-10-moodboard.png",
     "flat": "project-10-design2d.png"
   },
@@ -94,7 +94,7 @@ export const projects = [
     "title": "Nature Means Growth",
     "students": "Vienna, Gigi, Hafwen",
     "story": "Nature-inspired patterns represent growth; green communicates heritage.",
-    "hero": "project-11-design3d.png",
+    "hero": "11.png",
     "moodboard": "project-11-moodboard.png",
     "flat": "project-11-design2d.png"
   }
