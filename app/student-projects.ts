@@ -49,7 +49,7 @@ export const projects = [
     "title": "Ivy & Bravery",
     "students": "Ella, Talia, Aluma",
     "story": "The team chose ivy as a symbol of growing with support, and pink to make the shirt stand out and represent bravery.",
-    "hero": "project-06-design3d.png",
+    "hero": "06.png",
     "moodboard": "m06.png",
     "flat": "project-06-design2d.png"
   },
