@@ -8,7 +8,8 @@ export default function ClickGlitch() {
 
   useEffect(() => {
     const handleClick = (event: PointerEvent) => {
-      if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+      if (event.pointerType !== "mouse" || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+      if ((event.target as Element | null)?.closest?.('[role="dialog"]')) return;
       // Keep the effect cosmetic; clicks and navigation work normally.
       setBurst({ x: event.clientX, y: event.clientY, id: Date.now() });
       if (timeout.current) clearTimeout(timeout.current);
