@@ -21,11 +21,11 @@ export default function HomePage() {
         </nav>
       </header>
 
-      <section className="relative isolate mx-auto flex min-h-[760px] max-w-7xl flex-col justify-center overflow-hidden px-6 py-24 md:px-10" aria-labelledby="hero-title">
+      <section className="matrix-hero relative isolate mx-auto flex min-h-[760px] max-w-7xl flex-col justify-center overflow-hidden px-6 py-24 md:px-10" aria-labelledby="hero-title">
         <div className="pointer-events-none absolute inset-0 -z-10 opacity-25" style={{backgroundImage: "linear-gradient(to right, #7e9288 1px, transparent 1px),linear-gradient(to bottom, #7e9288 1px, transparent 1px)", backgroundSize: "48px 48px", maskImage:"linear-gradient(to bottom,black,transparent)"}} aria-hidden="true" />
         <div className="pointer-events-none absolute -right-32 top-16 -z-10 h-[480px] w-[480px] rounded-full bg-[#b6ff4a]/10 blur-[100px]" aria-hidden="true" />
         <div className="mb-10 flex flex-wrap items-center gap-4 font-mono text-xs uppercase tracking-[0.16em] text-[#a8ff43]"><span className="inline-block h-2 w-2 animate-pulse rounded-full bg-[#a8ff43]" />SYSTEM ONLINE <span className="text-[#a5aaa6] text-[1.5em] leading-none">// DESIGN HACKATHON</span></div>
-        <h1 id="hero-title" className="max-w-6xl text-[clamp(3.7rem,11.7vw,10.7rem)] font-black uppercase leading-[0.84] tracking-[-0.085em]">UNBLANK<br />THE <span className="relative text-[#a8ff43]">CANVAS<span className="text-white">.</span></span></h1>
+        <h1 id="hero-title" className="max-w-6xl text-[clamp(3.7rem,11.7vw,10.7rem)] font-black uppercase leading-[0.84] tracking-[-0.085em]">UNBLANK<br />THE <span className="matrix-glitch-text relative text-[#a8ff43]" data-text="CANVAS">CANVAS<span className="text-white">.</span></span></h1>
         <div className="mt-12 grid gap-10 border-t border-white/25 pt-8 md:grid-cols-[1fr_auto] md:items-end">
           <div><p className="font-mono text-xs uppercase tracking-[0.18em] text-[#a8ff43]">Creative thinking // activated</p><p className="mt-5 max-w-2xl text-xl leading-snug text-[#e0e3d9] md:text-2xl">Not another design competition. A creative hackathon where young minds discover extraordinary stories, break predictable patterns and turn original ideas into real designs.</p></div>
           <a href="#get-involved" className="inline-flex w-fit items-center justify-center bg-[#a8ff43] px-8 py-5 font-mono text-sm font-black uppercase text-[#080909] transition hover:bg-white">JOIN THE MISSION ↗</a>
@@ -45,7 +45,7 @@ export default function HomePage() {
         <h2 className="mt-5 max-w-4xl text-5xl font-black uppercase leading-[0.95] tracking-tighter md:text-7xl">FOUR STAGES.<br />ZERO BLANK CANVASES.</h2>
         <div className="mt-14 grid gap-px border border-white/20 bg-white/20 md:grid-cols-2">
           {stages.map((stage) => (
-            <article key={stage.id} className="bg-[#0e100e] p-8 transition hover:bg-[#182017] md:p-10">
+            <article key={stage.id} className="matrix-stage bg-[#0e100e] p-8 transition hover:bg-[#182017] md:p-10">
               <div className="flex items-start justify-between font-mono text-xs text-[#a8ff43]"><span>STEP_{stage.id}</span><span aria-hidden="true">↗</span></div>
               <h3 className="mt-12 text-4xl font-black tracking-tight md:text-5xl">{stage.label}</h3>
               <p className="mt-4 font-mono text-sm text-[#a8ff43]">&gt; {stage.command}</p>
