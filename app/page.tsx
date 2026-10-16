@@ -13,7 +13,7 @@ export default function HomePage() {
     <main className="min-h-screen bg-[#080909] text-[#f3f4ee] selection:bg-[#a8ff43] selection:text-black">
       <div className="pointer-events-none fixed inset-0 z-50 opacity-[0.045]" style={{backgroundImage: "linear-gradient(transparent 50%, #000 50%)", backgroundSize: "100% 4px"}} aria-hidden="true" />
       <header className="relative z-20 mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-4 border-b border-white/20 px-6 py-6 md:px-10">
-        <Link href="/" className="font-mono text-lg font-black tracking-tighter">DESIGN<span className="text-[#a8ff43]">_</span>XDM <span className="text-[#9eaaa2]">/ Unblank The Canvas: Design Hackathon</span></Link>
+        <Link href="/" className="font-mono text-lg font-black tracking-tighter">DESIGN<span className="text-[#a8ff43]">_</span>XDM <span className="font-normal text-[#9eaaa2]">/ UNBLANK THE CANVAS</span></Link>
         <nav aria-label="Main navigation" className="flex flex-wrap items-center gap-4 font-mono text-[11px] font-bold uppercase tracking-wide sm:gap-7">
           <a href="#mission" className="hover:text-[#a8ff43]">[01] Mission</a>
           <a href="#process" className="hover:text-[#a8ff43]">[02] Process</a>
