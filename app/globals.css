@@ -104,3 +104,47 @@
   .matrix-hero::after { animation: none !important; opacity: 0 !important; }
   .matrix-stage::before { transition: none; }
 }
+
+
+/* Visible glitch pass: immediate on load, then approximately every five seconds. */
+.matrix-glitch-text::before {
+  z-index: 2;
+  text-shadow: -3px 0 #36ff8c;
+  animation: matrix-visible-a 5s infinite steps(1, end);
+}
+.matrix-glitch-text::after {
+  z-index: 3;
+  text-shadow: 3px 0 #00d8cc;
+  animation: matrix-visible-b 5s infinite steps(1, end);
+}
+.matrix-glitch-text:hover::before,
+.matrix-glitch-text:hover::after { animation-duration: 1.2s; }
+.matrix-hero::after {
+  z-index: 1;
+  background: repeating-linear-gradient(to bottom, transparent 0 6px, rgba(168,255,67,.35) 7px, transparent 8px);
+  animation: matrix-visible-scan 7s infinite steps(1, end);
+}
+.matrix-hero > :not(.pointer-events-none) { position: relative; z-index: 2; }
+@keyframes matrix-visible-a {
+  0%, 7%, 13%, 100% { opacity: 0; transform: translate(0); clip-path: inset(0 0 0 0); }
+  1%, 3% { opacity: .95; transform: translate(-5px, 1px); clip-path: inset(12% 0 64% 0); }
+  4%, 6% { opacity: .8; transform: translate(4px,-2px); clip-path: inset(63% 0 10% 0); }
+  9%, 11% { opacity: .8; transform: translate(-3px,0); clip-path: inset(39% 0 43% 0); }
+}
+@keyframes matrix-visible-b {
+  0%, 7%, 13%, 100% { opacity: 0; transform: translate(0); clip-path: inset(0 0 0 0); }
+  2%, 4% { opacity: .85; transform: translate(5px,-2px); clip-path: inset(42% 0 30% 0); }
+  5%, 6% { opacity: .8; transform: translate(-4px,1px); clip-path: inset(8% 0 68% 0); }
+  10%, 12% { opacity: .7; transform: translate(3px,1px); clip-path: inset(70% 0 7% 0); }
+}
+@keyframes matrix-visible-scan {
+  0%, 8%, 15%, 100% { opacity: 0; transform: translateY(0); }
+  1%, 3% { opacity: .20; transform: translateY(-4px); }
+  4%, 6% { opacity: .12; transform: translateY(5px); }
+  10%, 12% { opacity: .14; transform: translateY(0); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .matrix-glitch-text::before,
+  .matrix-glitch-text::after,
+  .matrix-hero::after { animation: none !important; opacity: 0 !important; }
+}
