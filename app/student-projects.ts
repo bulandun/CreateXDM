@@ -5,7 +5,7 @@ export const projects = [
     "students": "Lovell, Lottie, Jasmine",
     "story": "Green stripes represent calmness and ivy growing around Wychwood School. Electric blue connects the shirt to the football academy.",
     "hero": "01.png",
-    "moodboard": "project-01-moodboard.png",
+    "moodboard": "m01.png",
     "flat": "project-01-design2d.png"
   },
   {
@@ -14,7 +14,7 @@ export const projects = [
     "students": "Agustin, Jimmy, Isaac",
     "story": "Green and blue represent the school and academy, as well as growth, learning and calmness. The team also designed a new academy badge.",
     "hero": "02.png",
-    "moodboard": null,
+    "moodboard": "m02.png",
     "flat": "project-02-design2d.png"
   },
   {
@@ -23,7 +23,7 @@ export const projects = [
     "students": "Tob, Alexander, Matilda",
     "story": "Teal, blue, textured patterns and themes of trust, determination, confidence and curiosity shape this design.",
     "hero": "03.png",
-    "moodboard": "project-03-moodboard.png",
+    "moodboard": "m03.png",
     "flat": null
   },
   {
@@ -32,7 +32,7 @@ export const projects = [
     "students": "Anna, Maya, Betsy",
     "story": "Emerald green represents nature, navy blue represents calmness and stability, and gold represents power and endurance.",
     "hero": "04.png",
-    "moodboard": "project-04-moodboard.png",
+    "moodboard": "m04.png",
     "flat": null
   },
   {
@@ -41,7 +41,7 @@ export const projects = [
     "students": "Charlie, Anna, Immie",
     "story": "Black, green and lime express calmness and unity. Geometric shapes and ivy-inspired badge details celebrate individuality and teamwork.",
     "hero": "05.png",
-    "moodboard": "project-05-moodboard.png",
+    "moodboard": "m05.png",
     "flat": null
   },
   {
@@ -50,7 +50,7 @@ export const projects = [
     "students": "Ella, Talia, Aluma",
     "story": "The team chose ivy as a symbol of growing with support, and pink to make the shirt stand out and represent bravery.",
     "hero": "project-06-design3d.png",
-    "moodboard": "project-06-moodboard.png",
+    "moodboard": "m06.png",
     "flat": "project-06-design2d.png"
   },
   {
@@ -59,7 +59,7 @@ export const projects = [
     "students": "Mylo, Inga, Luke",
     "story": "Blue represents calmness and focus, while ivy connects Wychwood School and the academy through growth and learning.",
     "hero": "07.png",
-    "moodboard": "project-07-moodboard.png",
+    "moodboard": "m07.png",
     "flat": "project-07-design2d.png"
   },
   {
@@ -68,7 +68,7 @@ export const projects = [
     "students": "Millie, Emily, Florence",
     "story": "Green and pink stand for creativity, nature and heritage. The ivy suggests growth, community and perseverance.",
     "hero": "08.png",
-    "moodboard": "project-08-moodboard.png",
+    "moodboard": "m08.png",
     "flat": null
   },
   {
@@ -77,7 +77,7 @@ export const projects = [
     "students": "Sen, Georgina, Manuela",
     "story": "Leaves express nature and ecology, turquoise represents calmness and communication, and ivy represents growth.",
     "hero": "09.png",
-    "moodboard": "project-09-moodboard.png",
+    "moodboard": "m09.png",
     "flat": "project-09-design2d.png"
   },
   {
@@ -86,7 +86,7 @@ export const projects = [
     "students": "Xavi, Kai, Claire",
     "story": "A design combining floral elements, foliage and green tones with a botanical pattern language.",
     "hero": "10.png",
-    "moodboard": "project-10-moodboard.png",
+    "moodboard": "m10.png",
     "flat": "project-10-design2d.png"
   },
   {
@@ -95,7 +95,7 @@ export const projects = [
     "students": "Vienna, Gigi, Hafwen",
     "story": "Nature-inspired patterns represent growth; green communicates heritage.",
     "hero": "11.png",
-    "moodboard": "project-11-moodboard.png",
+    "moodboard": "m11.png",
     "flat": "project-11-design2d.png"
   }
 ] as const;
