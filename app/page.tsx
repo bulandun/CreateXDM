@@ -17,7 +17,7 @@ export default function HomePage() {
         <nav aria-label="Main navigation" className="flex flex-wrap items-center gap-4 font-mono text-[11px] font-bold uppercase tracking-wide sm:gap-7">
           <a href="#mission" className="hover:text-[#a8ff43]">[01] Mission</a>
           <a href="#process" className="hover:text-[#a8ff43]">[02] Process</a>
-          <a href="#student-work" className="border border-[#a8ff43] px-4 py-2 text-[#a8ff43] transition hover:bg-[#a8ff43] hover:text-black">[04] Student work ↗</a>
+          <a href="#student-work" className="border border-[#a8ff43] px-4 py-2 text-[#a8ff43] transition hover:bg-[#a8ff43] hover:text-black">[04] Design Hackathons ↗</a>
         </nav>
       </header>
 
