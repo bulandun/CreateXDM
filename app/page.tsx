@@ -67,7 +67,7 @@ export default function HomePage() {
       <section id="get-involved" className="relative mx-auto max-w-7xl px-6 py-24 md:px-10">
         <div className="border border-[#a8ff43]/60 bg-[#111811] p-8 md:p-16">
           <p className="font-mono text-xs font-bold tracking-[0.2em] text-[#a8ff43]">[03] / YOUR TURN</p>
-          <h2 className="mt-6 max-w-4xl text-5xl font-black uppercase leading-[0.95] tracking-tighter md:text-7xl">BRING THE HACKATHON<br /><span className="text-[#a8ff43]">TO YOUR SCHOOL.</span></h2>
+          <h2 className="mt-6 max-w-4xl text-5xl font-black uppercase leading-[0.95] tracking-tighter md:text-7xl">HOST A DESIGN<br /><span className="text-[#a8ff43]">HACKATHON WITH US.</span></h2>
           <p className="mt-8 max-w-2xl text-lg leading-relaxed text-[#c3cfc1]">We welcome conversations with schools, educators, creative professionals and organisations interested in helping the next generation of designers think bigger.</p>
           <div className="mt-10 flex flex-wrap gap-4"><a href="https://www.designxdm.com" target="_blank" rel="noopener noreferrer" className="inline-flex items-center bg-[#a8ff43] px-7 py-4 font-mono text-sm font-bold text-black hover:bg-white">EXPLORE DESIGNXDM ↗</a><a href="https://www.linkedin.com/company/designxdm/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center border border-white/40 px-7 py-4 font-mono text-sm font-bold text-white hover:border-[#a8ff43] hover:text-[#a8ff43]">CONNECT WITH US ↗</a></div>
         </div>
