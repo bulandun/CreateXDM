@@ -18,7 +18,7 @@ function OriginalArtwork({ filename, label, project }: { filename: string | null
           // Use the student's original presentation image, never generated replacements.
           // eslint-disable-next-line @next/next/no-img-element
           <img
-            src={`/hackathon/${filename}`}
+            src={`/hackathon/${filename}?v=20261016-refresh`}
             alt={`${project} — ${label.toLowerCase()} created by students`}
             className="absolute inset-0 h-full w-full object-contain"
             loading="lazy"
