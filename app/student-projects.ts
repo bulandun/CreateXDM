@@ -40,7 +40,7 @@ export const projects = [
     "title": "Calm, Unity & Creativity",
     "students": "Charlie, Anna, Immie",
     "story": "Black, green and lime express calmness and unity. Geometric shapes and ivy-inspired badge details celebrate individuality and teamwork.",
-    "hero": "project-05-design.png",
+    "hero": "05.png",
     "moodboard": "project-05-moodboard.png",
     "flat": null
   },
