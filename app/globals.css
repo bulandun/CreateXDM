@@ -197,3 +197,19 @@
 @media (prefers-reduced-motion: reduce) {
   .matrix-click-glitch { display: none !important; }
 }
+
+/* Native momentum scrolling for the mobile project viewer. */
+.project-modal-scroll {
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior: contain;
+  touch-action: pan-y;
+  scrollbar-gutter: stable;
+}
+@media (max-width: 767px) {
+  .project-modal-scroll {
+    height: 100dvh;
+    max-height: 100dvh;
+    padding-bottom: max(1rem, env(safe-area-inset-bottom));
+    scrollbar-gutter: auto;
+  }
+}
