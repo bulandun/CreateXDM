@@ -72,7 +72,7 @@ export default function HomePage() {
           <div className="mt-10 flex flex-wrap gap-4"><a href="https://www.designxdm.com" target="_blank" rel="noopener noreferrer" className="inline-flex items-center bg-[#a8ff43] px-7 py-4 font-mono text-sm font-bold text-black hover:bg-white">EXPLORE DESIGNXDM ↗</a><a href="https://www.linkedin.com/company/design-xdm" target="_blank" rel="noopener noreferrer" className="inline-flex items-center border border-white/40 px-7 py-4 font-mono text-sm font-bold text-white hover:border-[#a8ff43] hover:text-[#a8ff43]">CONNECT ON LINKEDIN ↗</a><a href="mailto:brendan@designxdm.com" className="inline-flex items-center border border-white/40 px-7 py-4 font-mono text-sm font-bold text-white hover:border-[#a8ff43] hover:text-[#a8ff43]">EMAIL US ↗</a></div>
         </div>
       </section>
-      <footer className="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-4 border-t border-white/15 px-6 py-8 font-mono text-xs uppercase tracking-widest text-[#9ba69b] md:px-10"><span>UNBLANK THE CANVAS // BY DESIGNXDM</span><span>HUMAN CREATIVITY FIRST.</span></footer>
+      <footer className="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-4 border-t border-white/15 px-6 py-8 font-mono text-xs uppercase tracking-widest text-[#9ba69b] md:px-10"><span>UNBLANK THE CANVAS // BY DESIGNXDM</span><span>DESIGN WITH MEANING.</span></footer>
     </main>
   );
 }
