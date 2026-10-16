@@ -150,54 +150,49 @@
 }
 
 
-/* A quick, non-interactive digital burst at the pointer position. */
+/* Subtle, click-triggered digital screen tear; no artwork distortion. */
 .matrix-click-glitch {
   position: fixed;
   z-index: 200;
-  width: 110px;
-  height: 64px;
+  width: min(180px, 40vw);
+  height: 46px;
   transform: translate(-50%, -50%);
   pointer-events: none;
   overflow: hidden;
-  animation: matrix-click-burst 380ms steps(1, end) both;
+  opacity: 0;
+  mix-blend-mode: screen;
+  animation: matrix-digital-tear 240ms steps(1, end) both;
 }
 .matrix-click-glitch span {
   position: absolute;
-  left: 0;
-  height: 3px;
-  background: #a8ff43;
-  box-shadow: 0 0 12px #a8ff43;
+  display: block;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, rgba(170,255,183,.52) 12%, rgba(160,255,188,.22) 80%, transparent);
+  box-shadow: 0 0 2px rgba(140,255,168,.3);
 }
-.matrix-click-glitch span:nth-child(1) {
-  top: 12px;
-  width: 90%;
-  animation: matrix-click-slice 280ms steps(2, end) both;
+.matrix-click-glitch span:nth-child(1) { top: 10px; left: 2%; width: 82%; animation: matrix-tear-left 240ms steps(1,end) both; }
+.matrix-click-glitch span:nth-child(2) { top: 22px; left: 16%; width: 78%; height: 1px; animation: matrix-tear-right 240ms steps(1,end) both; }
+.matrix-click-glitch span:nth-child(3) { top: 34px; left: 7%; width: 64%; animation: matrix-tear-left 240ms steps(1,end) both; }
+@keyframes matrix-digital-tear {
+  0% { opacity: 0; }
+  10%, 23% { opacity: .6; }
+  24%, 37% { opacity: .1; }
+  38%, 64% { opacity: .5; }
+  65%, 100% { opacity: 0; }
 }
-.matrix-click-glitch span:nth-child(2) {
-  top: 30px;
-  width: 60%;
-  left: 25%;
-  background: #45dabe;
-  animation: matrix-click-slice 240ms 50ms steps(2, end) both reverse;
+@keyframes matrix-tear-left {
+  0% { transform: translateX(0); }
+  10% { transform: translateX(-10px); }
+  28% { transform: translateX(4px); }
+  46% { transform: translateX(-5px); }
+  65%, 100% { transform: translateX(0); }
 }
-.matrix-click-glitch span:nth-child(3) {
-  top: 48px;
-  width: 75%;
-  left: 5%;
-  animation: matrix-click-slice 320ms steps(2, end) both;
-}
-@keyframes matrix-click-burst {
-  0% { opacity: .95; filter: brightness(1.7); }
-  35% { opacity: .35; }
-  55% { opacity: .85; }
-  80% { opacity: .25; }
-  100% { opacity: 0; }
-}
-@keyframes matrix-click-slice {
-  0% { transform: translateX(-14px); }
-  30% { transform: translateX(13px); }
-  60% { transform: translateX(-7px); }
-  100% { transform: translateX(9px); }
+@keyframes matrix-tear-right {
+  0% { transform: translateX(0); }
+  10% { transform: translateX(9px); }
+  28% { transform: translateX(-6px); }
+  46% { transform: translateX(4px); }
+  65%, 100% { transform: translateX(0); }
 }
 @media (prefers-reduced-motion: reduce) {
   .matrix-click-glitch { display: none !important; }
