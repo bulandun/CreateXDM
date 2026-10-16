@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { projects } from "../app/student-projects";
 
 function OriginalArtwork({ filename, label, project }: { filename: string | null; label: string; project: string }) {
@@ -32,6 +32,18 @@ function OriginalArtwork({ filename, label, project }: { filename: string | null
 
 export default function StudentGallery() {
   const [selected, setSelected] = useState<number | null>(null);
+  const modalRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (selected === null) return;
+    const oldOverflow = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    return () => { document.body.style.overflow = oldOverflow; };
+  }, [selected !== null]);
+
+  useEffect(() => {
+    if (selected !== null && modalRef.current) modalRef.current.scrollTop = 0;
+  }, [selected]);
   const active = selected !== null ? projects[selected] : null;
   return (
     <section id="student-work" className="mx-auto max-w-7xl px-6 py-24 md:px-10">
@@ -58,7 +70,7 @@ export default function StudentGallery() {
         ))}
       </div>
       {active && (
-        <div role="dialog" aria-modal="true" aria-label={active.title} className="fixed inset-0 z-[100] overflow-y-auto bg-black/90 p-4 md:p-10" onClick={() => setSelected(null)}>
+        <div ref={modalRef} role="dialog" aria-modal="true" aria-label={active.title} className="project-modal-scroll fixed inset-0 z-[100] overflow-y-auto overscroll-contain bg-black/90 p-4 md:p-10" onClick={() => setSelected(null)}>
           <div className="mx-auto max-w-5xl border border-[#a8ff43]/50 bg-[#0b0d0b] p-5 md:p-10" onClick={(e) => e.stopPropagation()}>
             <div className="flex items-start justify-between gap-5">
               <div>
