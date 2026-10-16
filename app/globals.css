@@ -30,3 +30,77 @@
 * {
   border-color: rgba(255, 255, 255, 0.16);
 }
+
+
+/* Restrained cyberpunk glitches: decorative only, never over student artwork. */
+.matrix-glitch-text {
+  display: inline-block;
+  isolation: isolate;
+}
+.matrix-glitch-text::before,
+.matrix-glitch-text::after {
+  content: attr(data-text);
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0;
+}
+.matrix-glitch-text::before {
+  color: #d9ffab;
+  animation: matrix-glitch-a 11s infinite steps(1, end);
+}
+.matrix-glitch-text::after {
+  color: #32e8a3;
+  animation: matrix-glitch-b 11s infinite steps(1, end);
+}
+.matrix-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background: repeating-linear-gradient(to bottom, transparent 0px, transparent 5px, rgba(168,255,67,.10) 6px, transparent 7px);
+  opacity: 0;
+  animation: matrix-scan 13s infinite;
+}
+.matrix-stage {
+  position: relative;
+}
+.matrix-stage::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: #a8ff43;
+  opacity: 0;
+  pointer-events: none;
+  box-shadow: 0 0 12px rgba(168,255,67,.65);
+  transition: opacity .15s ease;
+}
+.matrix-stage:hover::before,
+.matrix-stage:focus-within::before {
+  opacity: .8;
+}
+@keyframes matrix-glitch-a {
+  0%, 91%, 93%, 94%, 96%, 100% { opacity: 0; transform: none; clip-path: none; }
+  92% { opacity: .7; transform: translate(3px,-1px); clip-path: inset(8% 0 60% 0); }
+  95% { opacity: .45; transform: translate(-2px,1px); clip-path: inset(65% 0 12% 0); }
+}
+@keyframes matrix-glitch-b {
+  0%, 91%, 93%, 94%, 96%, 100% { opacity: 0; transform: none; clip-path: none; }
+  92% { opacity: .5; transform: translate(-3px,2px); clip-path: inset(54% 0 18% 0); }
+  95% { opacity: .65; transform: translate(2px,-2px); clip-path: inset(17% 0 61% 0); }
+}
+@keyframes matrix-scan {
+  0%, 89%, 92%, 100% { opacity: 0; transform: translateY(0); }
+  90% { opacity: .17; transform: translateY(-10px); }
+  91% { opacity: .09; transform: translateY(8px); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .matrix-glitch-text::before,
+  .matrix-glitch-text::after,
+  .matrix-hero::after { animation: none !important; opacity: 0 !important; }
+  .matrix-stage::before { transition: none; }
+}
