@@ -20,8 +20,9 @@ function OriginalArtwork({ filename, label, project }: { filename: string | null
           <img
             src={`/hackathon/${filename}?v=20261016-refresh`}
             alt={`${project} — ${label.toLowerCase()} created by students`}
-            className="absolute inset-0 h-full w-full object-contain object-center scale-[1.025] transform-gpu"
-            loading="lazy"
+            className="absolute inset-0 h-full w-full object-contain object-center"
+            loading="eager"
+            decoding="async"
             onError={() => setFailed(true)}
           />
         )}
