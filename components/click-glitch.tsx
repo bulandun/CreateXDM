@@ -12,7 +12,7 @@ export default function ClickGlitch() {
       // Keep the effect cosmetic; clicks and navigation work normally.
       setBurst({ x: event.clientX, y: event.clientY, id: Date.now() });
       if (timeout.current) clearTimeout(timeout.current);
-      timeout.current = setTimeout(() => setBurst(null), 380);
+      timeout.current = setTimeout(() => setBurst(null), 240);
     };
     window.addEventListener("pointerdown", handleClick, { passive: true });
     return () => {
