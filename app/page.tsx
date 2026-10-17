@@ -5,7 +5,7 @@ import Link from "next/link";
 const stages = [
   { id: "01", label: "DISCOVER", command: "find --inspiration", description: "Explore incredible visuals and real stories from science, nature, culture and archives using DesignXDM." },
   { id: "02", label: "DECODE", command: "build --concept", description: "Connect ideas, challenge the obvious and create a design with a story worth telling." },
-  { id: "03", label: "DESIGN", command: "make --original", description: "Bring your idea to life with creative tools, including our Adobe Express football shirt designer." },
+  { id: "03", label: "DESIGN", command: "make --original", description: "Bring your idea to life with creative tools, including custom-made design tools such as our Adobe Express football shirt designer." },
   { id: "04", label: "DEPLOY", command: "share --your-story", description: "Pitch your creation, explain your choices and celebrate the originality of every team." }
 ];
 
