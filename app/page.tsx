@@ -32,7 +32,7 @@ export default function HomePage() {
           <div><p className="font-mono text-xs uppercase tracking-[0.18em] text-[#a8ff43]">Creative thinking // activated</p><p className="mt-5 max-w-2xl text-xl leading-snug text-[#e0e3d9] md:text-2xl">Not another design competition. A creative hackathon where innovative minds discover extraordinary stories, break predictable patterns and turn original ideas into real designs.</p></div>
           <a href="#get-involved" className="inline-flex w-fit items-center justify-center bg-[#a8ff43] px-8 py-5 font-mono text-sm font-black uppercase text-[#080909] transition hover:bg-white">JOIN THE MISSION ↗</a>
         </div>
-        <div className="mt-14 flex flex-wrap gap-x-8 gap-y-3 font-mono text-[11px] uppercase tracking-[0.1em] text-[#a9b0a9]"><span>LOCATION: OXFORD / UK</span><span>FORMAT: TEAM HACKATHON</span><span>POWERED BY: DESIGNXDM</span></div>
+        <div className="mt-14 flex flex-wrap gap-x-8 gap-y-3 font-mono text-[11px] uppercase tracking-[0.1em] text-[#a9b0a9]"><span>LOCATION: SECRET</span><span>FORMAT: TEAM HACKATHON</span><span>POWERED BY: DESIGNXDM</span></div>
       </section>
 
       <section id="mission" className="border-y border-white/15 bg-[#121612]">
