@@ -28,6 +28,13 @@ export default function HomePage() {
         <div className="pointer-events-none absolute -right-32 top-16 -z-10 h-[480px] w-[480px] rounded-full bg-[#b6ff4a]/10 blur-[100px]" aria-hidden="true" />
         <div className="mb-10 flex flex-wrap items-center gap-4 font-mono text-xs uppercase tracking-[0.16em] text-[#a8ff43]"><span className="inline-block h-2 w-2 animate-pulse rounded-full bg-[#a8ff43]" />SYSTEM ONLINE <span className="text-[#a5aaa6] text-[1.5em] leading-none">// DESIGN HACKATHON</span></div>
         <h1 id="hero-title" className="max-w-6xl text-[clamp(3.7rem,11.7vw,10.7rem)] font-black uppercase leading-[0.84] tracking-[-0.085em]">UNBLANK<br />THE <span className="matrix-glitch-text relative text-[#a8ff43]" data-text="CANVAS">CANVAS<span className="text-white">.</span></span></h1>
+        <div className="hackathon-snake-wrap" aria-label="DESIGN HACKATHON">
+          <span className="hackathon-snake" aria-hidden="true">
+            {Array.from("DESIGN HACKATHON").map((letter, index) => (
+              <span key={index} className="hackathon-snake-letter" style={{ animationDelay: `${index * 0.105}s` }}>{letter === " " ? "\u00a0" : letter}</span>
+            ))}
+          </span>
+        </div>
         <div className="mt-12 grid gap-10 border-t border-white/25 pt-8 md:grid-cols-[1fr_auto] md:items-end">
           <div><p className="font-mono text-xs uppercase tracking-[0.18em] text-[#a8ff43]">Creative thinking // activated</p><p className="mt-5 max-w-2xl text-xl leading-snug text-[#e0e3d9] md:text-2xl">Not another design competition. A creative hackathon where innovative minds discover extraordinary stories, break predictable patterns and turn original ideas into real designs.</p></div>
           <a href="#get-involved" className="inline-flex w-fit items-center justify-center bg-[#a8ff43] px-8 py-5 font-mono text-sm font-black uppercase text-[#080909] transition hover:bg-white">JOIN THE MISSION ↗</a>
