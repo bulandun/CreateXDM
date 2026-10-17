@@ -227,3 +227,44 @@ body:has(.project-modal-scroll) .matrix-hero::after {
     background-color: #080909;
   }
 }
+
+
+/* Design Hackathon: code-only snake-like light travelling through the lettering. */
+.hackathon-snake-wrap {
+  width: 100%;
+  max-width: 72rem;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: clamp(0.9rem, 2.2vw, 2rem);
+  padding-right: 0.15em;
+  overflow: visible;
+}
+.hackathon-snake {
+  display: inline-flex;
+  white-space: nowrap;
+  font-family: "Inter", "Avenir Next", "Helvetica Neue", system-ui, sans-serif;
+  font-size: clamp(0.83rem, 2.15vw, 1.65rem);
+  line-height: 1.25;
+  font-weight: 350;
+  letter-spacing: 0.10em;
+  color: #b9ff65;
+}
+.hackathon-snake-letter {
+  display: inline-block;
+  color: #7d927b;
+  animation: hackathon-snake-flow 5.9s ease-in-out infinite;
+  will-change: color, text-shadow, transform;
+}
+@keyframes hackathon-snake-flow {
+  0%, 6% { color: #7d927b; text-shadow: none; transform: translateY(0); }
+  9% { color: #e0ffc0; text-shadow: 0 0 5px rgba(168,255,67,.9), 0 0 16px rgba(168,255,67,.6); transform: translateY(-2px); }
+  13%, 21% { color: #a8ff43; text-shadow: 0 0 7px rgba(168,255,67,.45); transform: translateY(0); }
+  28%, 83% { color: #a8ff43; text-shadow: none; transform: translateY(0); }
+  94%, 100% { color: #7d927b; text-shadow: none; transform: translateY(0); }
+}
+@media (max-width: 520px) {
+  .hackathon-snake { font-size: clamp(0.68rem, 3.05vw, 0.93rem); letter-spacing: 0.045em; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hackathon-snake-letter { animation: none; color: #a8ff43; }
+}
