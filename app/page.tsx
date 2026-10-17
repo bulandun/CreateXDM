@@ -60,7 +60,7 @@ export default function HomePage() {
       <section className="border-y border-white/20 bg-[#a8ff43] text-[#101510]">
         <div className="mx-auto grid max-w-7xl gap-10 px-6 py-20 md:grid-cols-[1fr_1fr] md:items-center md:px-10">
           <div><p className="font-mono text-xs font-bold tracking-[0.2em]">FIELD REPORT / OXFORD 2026</p><h2 className="mt-5 text-5xl font-black uppercase leading-[0.94] tracking-tighter md:text-7xl">FROM IDEAS<br />TO REALITY.</h2></div>
-          <div><p className="text-xl font-semibold leading-relaxed">At Wychwood School in Oxford, student teams explored visual inspiration, designed original football shirts and presented the stories behind their work.</p><p className="mt-5 text-lg leading-relaxed">The winning design is set to become a real football shirt — showing students how creative thinking can move beyond the screen.</p><p className="mt-7 font-mono text-xs uppercase tracking-wider">DESIGNXDM × ADOBE EXPRESS / SCHOOL DESIGN HACKATHON</p></div>
+          <div><p className="text-xl font-semibold leading-relaxed">At Wychwood School in Oxford, student teams explored visual inspiration, designed original football shirts and presented the stories behind their work.</p><p className="mt-5 text-lg leading-relaxed">The winning design is set to become a real football shirt — showing students how creative thinking can move beyond the screen.</p></div>
         </div>
       </section>
 
