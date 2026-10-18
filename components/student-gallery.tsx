@@ -1,6 +1,8 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
+
+const artworkUrl = (filename: string) => `/hackathon/${filename}`;
 import { projects } from "../app/student-projects";
 
 function OriginalArtwork({ filename, label, project }: { filename: string | null; label: string; project: string }) {
@@ -18,7 +20,7 @@ function OriginalArtwork({ filename, label, project }: { filename: string | null
           // Use the student's original presentation image, never generated replacements.
           // eslint-disable-next-line @next/next/no-img-element
           <img
-            src={`/hackathon/${filename}?v=20261016-refresh`}
+            src={artworkUrl(filename)}
             alt={`${project} — ${label.toLowerCase()} created by students`}
             className="absolute inset-0 h-full w-full object-contain object-center"
             loading="eager"
@@ -34,6 +36,35 @@ function OriginalArtwork({ filename, label, project }: { filename: string | null
 export default function StudentGallery() {
   const [selected, setSelected] = useState<number | null>(null);
   const modalRef = useRef<HTMLDivElement>(null);
+  const preloaded = useRef<Set<string>>(new Set());
+  const preloadProject = useCallback((index: number) => {
+    const project = projects[index];
+    if (!project || typeof window === "undefined") return;
+    for (const filename of [project.moodboard, project.hero]) {
+      if (!filename || preloaded.current.has(filename)) continue;
+      preloaded.current.add(filename);
+      const image = new window.Image();
+      image.src = artworkUrl(filename);
+    }
+  }, []);
+  const gridRef = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    const grid = gridRef.current;
+    if (!grid || !("IntersectionObserver" in window)) return;
+    const observer = new IntersectionObserver(([entry]) => {
+      if (entry.isIntersecting) {
+        preloadProject(0);
+        observer.disconnect();
+      }
+    }, { rootMargin: "250px" });
+    observer.observe(grid);
+    return () => observer.disconnect();
+  }, [preloadProject]);
+  useEffect(() => {
+    if (selected === null) return;
+    preloadProject(selected);
+    preloadProject((selected + 1) % projects.length);
+  }, [selected, preloadProject]);
 
   useEffect(() => {
     if (selected === null) return;
@@ -59,9 +90,9 @@ export default function StudentGallery() {
         </div>
         <p className="mt-12 font-mono text-xs uppercase tracking-[0.18em] text-[#a8ff43]">// EXPLORE THE STUDENT DESIGNS ↓</p>
       </div>
-      <div className="grid gap-px border border-white/20 bg-white/20 md:grid-cols-2 lg:grid-cols-3">
+      <div ref={gridRef} className="grid gap-px border border-white/20 bg-white/20 md:grid-cols-2 lg:grid-cols-3">
         {projects.map((p, i) => (
-          <button type="button" key={p.id} onClick={() => setSelected(i)} className="group flex h-full min-w-0 flex-col bg-[#0e110e] p-6 text-left transition hover:bg-[#182119]">
+          <button type="button" key={p.id} onClick={() => setSelected(i)} onMouseEnter={() => preloadProject(i)} onFocus={() => preloadProject(i)} onTouchStart={() => preloadProject(i)} className="group flex h-full min-w-0 flex-col bg-[#0e110e] p-6 text-left transition hover:bg-[#182119]">
             <span className="font-mono text-[11px] text-[#a8ff43]">PROJECT_{String(p.id).padStart(2, "0")} ↗</span>
             <h3 className="mt-5 min-h-[3.5rem] text-2xl font-black uppercase tracking-tight">{p.title}</h3>
             <p className="mt-3 text-sm text-[#bfcbbd]">{p.students}</p>
