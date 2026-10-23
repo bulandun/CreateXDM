@@ -13,7 +13,7 @@ const photos = [
   { file: "event-09.webp", alt: "Design Hackathon Unblank the Canvas at Wychwood School 2026", caption: "Unblank the Canvas" },
   { file: "event-10.webp", alt: "Design Hackathon participation certificates", caption: "Creative achievement" },
 ];
-const imageUrl = (file: string) => `/hackathon/events/${file}`;
+const imageUrl = (file: string) => `/hackathon/${file}`;
 
 export default function EventPics() {
   const [open, setOpen] = useState(false);
@@ -37,14 +37,9 @@ export default function EventPics() {
   return (
     <>
       <button type="button" onClick={() => { setIndex(0); setOpen(true); }}
-        className="group relative flex min-h-[210px] flex-col justify-end overflow-hidden bg-[#171b17] p-6 text-left transition hover:bg-[#202920]">
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src={imageUrl(photos[0].file)} alt="" loading="lazy"
-          className="absolute inset-0 h-full w-full object-cover opacity-55 transition duration-500 group-hover:scale-105 group-hover:opacity-75" />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/25 to-transparent"/>
-        <span className="relative font-mono text-[11px] uppercase tracking-[0.2em] text-[#a8ff43]">WYCHWOOD / OCT 2026</span>
-        <span className="relative mt-3 text-3xl font-black uppercase text-white">EVENT PICS ↗</span>
-        <span className="relative mt-2 font-mono text-xs text-[#d5e1d0]">VIEW THE PHOTO GALLERY →</span>
+        aria-label="Open event photos gallery"
+        className="flex min-h-[210px] items-center justify-center bg-[#3b3b3b] px-6 py-10 text-center transition hover:bg-[#484848] focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#a8ff43]">
+        <span className="font-mono text-lg uppercase tracking-[0.18em] text-[#a8ff43]">EVENT PICS</span>
       </button>
       {open && (
         <div role="dialog" aria-modal="true" aria-label="Wychwood School hackathon event photos"
