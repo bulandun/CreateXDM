@@ -4,6 +4,7 @@ import { useCallback, useEffect, useRef, useState } from "react";
 
 const artworkUrl = (filename: string) => `/hackathon/${filename}`;
 import { projects } from "../app/student-projects";
+import EventPics from "./event-pics";
 
 function OriginalArtwork({ filename, label, project }: { filename: string | null; label: string; project: string }) {
   const [failed, setFailed] = useState(false);
@@ -99,9 +100,7 @@ export default function StudentGallery() {
             <p className="mt-auto pt-4 font-mono text-xs text-[#a8ff43]">OPEN PROJECT →</p>
           </button>
         ))}
-        <div className="flex min-h-[210px] items-center justify-center bg-[#3b3b3b] px-6 py-10 text-center" aria-label="Event photos coming soon">
-          <span className="font-mono text-lg uppercase tracking-[0.18em] text-[#a8ff43]">EVENT PICS</span>
-        </div>
+        <EventPics />
       </div>
       {active && (
         <div ref={modalRef} role="dialog" aria-modal="true" aria-label={active.title} className="project-modal-scroll fixed inset-0 z-[100] overflow-y-auto overscroll-contain bg-black/90 p-4 md:p-10" onClick={() => setSelected(null)}>
