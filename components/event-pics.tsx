@@ -7,7 +7,7 @@ const photos = [
   { file: "event-02.webp", alt: "Students discussing original design directions", caption: "Design collaboration" },
   { file: "event-03.webp", alt: "Student teams presenting football shirt concepts", caption: "Student presentations" },
   { file: "event-04.webp", alt: "Student sharing a visual moodboard with an event mentor", caption: "Creative feedback" },
-  { file: "event-05.webp", alt: "Moodboard development on a tablet", caption: "Moodboard exploration" },
+  { file: "event-05.webp", alt: "Moodboard development on a tablet", caption: "Mood canvas exploration" },
   { file: "event-06.webp", alt: "Speaker addressing the Wychwood School hackathon", caption: "Workshop insights" },
   { file: "event-08.webp", alt: "Visual references and creative partners used in the workshop", caption: "Creative inspiration" },
   { file: "event-09.webp", alt: "Design Hackathon Unblank the Canvas at Wychwood School 2026", caption: "Unblank the Canvas" },
