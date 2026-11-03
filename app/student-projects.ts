@@ -2,7 +2,7 @@ export const projects = [
   {
     "id": 1,
     "title": "Growth & Friendship",
-    "students": "Lovell, Lottie, Jasmine",
+    "students": "Team Ivy Lightning",
     "story": "The green stripes on our shirt reflect a sense of calm and the ivy that grows around Wychwood School. Electric blue brings in a connection to the football academy.",
     "hero": "01.png",
     "moodboard": "m01.png",
@@ -11,7 +11,7 @@ export const projects = [
   {
     "id": 2,
     "title": "Without Limits",
-    "students": "Agustin, Jimmy, Isaac",
+    "students": "Team Badge Builders",
     "story": "Green and blue bring our school and the academy together. For us, these colours are about growth, learning and calmness, and we even designed a new badge for the academy.",
     "hero": "02.png",
     "moodboard": "m02.png",
@@ -20,7 +20,7 @@ export const projects = [
   {
     "id": 3,
     "title": "Trust, Curiosity & Confidence",
-    "students": "Tob, Alexander, Matilda",
+    "students": "Team Teal Trailblazers",
     "story": "We wanted our shirt to show trust, determination, confidence and curiosity. Teal and blue, together with textured patterns, helped us bring those ideas into the design.",
     "hero": "03.png",
     "moodboard": "m03.png",
@@ -29,7 +29,7 @@ export const projects = [
   {
     "id": 4,
     "title": "Ivy, Power & Creativity",
-    "students": "Anna, Maya, Betsy",
+    "students": "Team Emerald Royals",
     "story": "Nature inspired our emerald green, while navy blue gives the shirt a feeling of calmness and stability. The gold details stand for power and endurance.",
     "hero": "04.png",
     "moodboard": "m04.png",
@@ -38,7 +38,7 @@ export const projects = [
   {
     "id": 5,
     "title": "Calm, Unity & Creativity",
-    "students": "Charlie, Anna, Immie",
+    "students": "Team Lime Geometry",
     "story": "Our idea was to show both calmness and unity through black, green and lime. Geometric shapes give the shirt its own character, and the ivy-inspired badge celebrates individuality and teamwork.",
     "hero": "05.png",
     "moodboard": "m05.png",
@@ -47,7 +47,7 @@ export const projects = [
   {
     "id": 6,
     "title": "Ivy & Bravery",
-    "students": "Ella, Talia, Aluma",
+    "students": "Team Pink Ivy Rebels",
     "story": "Ivy felt like the right symbol for growing with the support of others. To make our shirt bold and different, we brought in pink as a colour of bravery.",
     "hero": "06.png",
     "moodboard": "m06.png",
@@ -56,7 +56,7 @@ export const projects = [
   {
     "id": 7,
     "title": "Growth & Focus",
-    "students": "Mylo, Inga, Luke",
+    "students": "Team Blue Ivy Crew",
     "story": "Blue gives our design a calm, focused feeling. The ivy is our link between Wychwood School and the academy, representing growth and learning along the way.",
     "hero": "07.png",
     "moodboard": "m07.png",
@@ -65,7 +65,7 @@ export const projects = [
   {
     "id": 8,
     "title": "Creativity, Nature & Heritage",
-    "students": "Millie, Emily, Florence",
+    "students": "Team Pink & Green Guardians",
     "story": "Creativity, nature and heritage are behind our green and pink colour scheme. We brought ivy into the design because it means growth, community and perseverance to us.",
     "hero": "08.png",
     "moodboard": "m08.png",
@@ -74,7 +74,7 @@ export const projects = [
   {
     "id": 9,
     "title": "Nature & Communication",
-    "students": "Sen, Georgina, Manuela",
+    "students": "Team Turquoise Leaves",
     "story": "Leaves are a big part of our design because we wanted to celebrate nature and ecology. Turquoise suggests calmness and communication, while the ivy carries the idea of growth.",
     "hero": "09.png",
     "moodboard": "m09.png",
@@ -83,7 +83,7 @@ export const projects = [
   {
     "id": 10,
     "title": "Nature Patterns & Heritage",
-    "students": "Xavi, Kai, Claire",
+    "students": "Team Botanical Blooms",
     "story": "Flowers, foliage and different greens are at the heart of our shirt. We explored botanical patterns to reflect nature and heritage.",
     "hero": "10.png",
     "moodboard": "m10.png",
@@ -92,7 +92,7 @@ export const projects = [
   {
     "id": 11,
     "title": "Nature Means Growth",
-    "students": "Vienna, Gigi, Hafwen",
+    "students": "Team Growing Roots",
     "story": "Growth is the idea behind our nature-inspired patterns. Green also matters to us because it represents heritage.",
     "hero": "11.png",
     "moodboard": "m11.png",
